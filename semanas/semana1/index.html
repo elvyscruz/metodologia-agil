@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semana 1: Introducción a las Metodologías Ágiles</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../../styles.css">
     <link rel="stylesheet" href="semana1.css">
+    <link rel="stylesheet" href="images.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -134,8 +135,11 @@
                         <!-- Video Principal -->
                         <div class="video-container">
                             <div class="video-player">
-                                <div class="video-placeholder">
-                                    <img src="https://via.placeholder.com/800x450/4f46e5/ffffff?text=Video+Introducción" alt="Video de introducción">
+                                <div class="video-placeholder lesson-1">
+                                    <div class="video-text">
+                                        <i class="fas fa-play-circle video-icon"></i>
+                                        <div>Video de Introducción</div>
+                                    </div>
                                     <div class="video-overlay">
                                         <button class="play-btn">
                                             <i class="fas fa-play"></i>
@@ -297,11 +301,16 @@
                             </div>
 
                             <div class="next-lesson">
-                                <h4>🎯 Próxima Lección</h4>
-                                <p>En la siguiente lección exploraremos la historia y orígenes del movimiento ágil, desde sus inicios hasta el Manifiesto Ágil de 2001.</p>
-                                <button class="btn btn-primary" onclick="nextLesson()">
-                                    Siguiente Lección <i class="fas fa-arrow-right"></i>
-                                </button>
+                                <h4>🎯 Marcar Lección como Completada</h4>
+                                <p>Antes de continuar, marca esta lección como completada para desbloquear la siguiente.</p>
+                                <div class="completion-buttons">
+                                    <button class="btn btn-success" onclick="markCurrentLessonComplete()">
+                                        <i class="fas fa-check"></i> Lección Completada
+                                    </button>
+                                    <button class="btn btn-primary" onclick="nextLesson()" disabled>
+                                        Siguiente Lección <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -320,8 +329,11 @@
                         <!-- Video Principal -->
                         <div class="video-container">
                             <div class="video-player">
-                                <div class="video-placeholder">
-                                    <img src="https://via.placeholder.com/800x450/7c3aed/ffffff?text=Historia+y+Orígenes" alt="Video de historia">
+                                <div class="video-placeholder lesson-2">
+                                    <div class="video-text">
+                                        <i class="fas fa-play-circle video-icon"></i>
+                                        <div>Historia y Orígenes</div>
+                                    </div>
                                     <div class="video-overlay">
                                         <button class="play-btn">
                                             <i class="fas fa-play"></i>
@@ -435,7 +447,12 @@
                                     </div>
 
                                     <div class="summit-image">
-                                        <img src="https://via.placeholder.com/400x250/4f46e5/ffffff?text=Reunión+Snowbird+2001" alt="Reunión de Snowbird 2001">
+                                        <div class="summit-image-placeholder">
+                                            <div class="image-text">
+                                                <i class="fas fa-users"></i>
+                                                <div>Reunión de Snowbird 2001</div>
+                                            </div>
+                                        </div>
                                         <p class="image-caption">Los 17 autores del Manifiesto Ágil</p>
                                     </div>
                                 </div>
@@ -529,9 +546,15 @@
                             <div class="next-lesson">
                                 <h4>🎯 Próxima Lección</h4>
                                 <p>En la siguiente lección exploraremos en detalle los cuatro valores del Manifiesto Ágil y su aplicación práctica en proyectos modernos.</p>
-                                <button class="btn btn-primary" onclick="nextLesson()">
-                                    Siguiente Lección <i class="fas fa-arrow-right"></i>
-                                </button>
+                                <p>Antes de continuar, marca esta lección como completada para desbloquear la siguiente.</p>
+                                <div class="completion-buttons">
+                                    <button class="btn btn-success" onclick="markCurrentLessonComplete()">
+                                        <i class="fas fa-check"></i> Lección Completada
+                                    </button>
+                                    <button class="btn btn-primary" onclick="nextLesson()" disabled>
+                                        Siguiente Lección <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -549,8 +572,11 @@
                         <!-- Video Principal -->
                         <div class="video-container">
                             <div class="video-player">
-                                <div class="video-placeholder">
-                                    <img src="https://via.placeholder.com/800x450/06b6d4/ffffff?text=El+Manifiesto+Ágil" alt="Video del Manifiesto Ágil">
+                                <div class="video-placeholder lesson-3">
+                                    <div class="video-text">
+                                        <i class="fas fa-play-circle video-icon"></i>
+                                        <div>El Manifiesto Ágil</div>
+                                    </div>
                                     <div class="video-overlay">
                                         <button class="play-btn">
                                             <i class="fas fa-play"></i>
@@ -856,9 +882,1163 @@
                             <div class="next-lesson">
                                 <h4>🎯 Próxima Lección</h4>
                                 <p>En la siguiente lección exploraremos los 12 principios del Manifiesto Ágil que complementan estos valores fundamentales.</p>
-                                <button class="btn btn-primary" onclick="nextLesson()">
-                                    Siguiente Lección <i class="fas fa-arrow-right"></i>
+                                <p>Antes de continuar, marca esta lección como completada para desbloquear la siguiente.</p>
+                                <div class="completion-buttons">
+                                    <button class="btn btn-success" onclick="markCurrentLessonComplete()">
+                                        <i class="fas fa-check"></i> Lección Completada
+                                    </button>
+                                    <button class="btn btn-primary" onclick="nextLesson()" disabled>
+                                        Siguiente Lección <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    </article>
+
+                    <article class="lesson-content" id="lesson-4" style="display: none;">
+                        <header class="lesson-header">
+                            <h1>1.4 Principios Ágiles</h1>
+                            <div class="lesson-meta">
+                                <span><i class="fas fa-clock"></i> 30 minutos</span>
+                                <span><i class="fas fa-signal"></i> Intermedio</span>
+                                <span><i class="fas fa-star"></i> 100 puntos</span>
+                            </div>
+                        </header>
+
+                        <!-- Video Principal -->
+                        <div class="video-container">
+                            <div class="video-player">
+                                <div class="video-placeholder lesson-4">
+                                    <div class="video-text">
+                                        <i class="fas fa-play-circle video-icon"></i>
+                                        <div>Principios Ágiles</div>
+                                    </div>
+                                    <div class="video-overlay">
+                                        <button class="play-btn">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                        <span class="video-duration">30:45</span>
+                                    </div>
+                                </div>
+                                <div class="video-controls">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                    <div class="controls-row">
+                                        <button class="control-btn"><i class="fas fa-play"></i></button>
+                                        <button class="control-btn"><i class="fas fa-volume-up"></i></button>
+                                        <span class="time-display">0:00 / 30:45</span>
+                                        <button class="control-btn"><i class="fas fa-cog"></i></button>
+                                        <button class="control-btn"><i class="fas fa-expand"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contenido Teórico -->
+                        <div class="content-sections">
+                            <section class="content-section">
+                                <h2><i class="fas fa-list-ol"></i> Los 12 Principios del Manifiesto Ágil</h2>
+                                <p>Además de los cuatro valores, el Manifiesto Ágil incluye doce principios que proporcionan guías más específicas para implementar metodologías ágiles. Estos principios complementan los valores y ofrecen una hoja de ruta práctica para equipos.</p>
+
+                                <div class="principles-intro">
+                                    <div class="intro-card">
+                                        <div class="intro-icon">
+                                            <i class="fas fa-compass"></i>
+                                        </div>
+                                        <div class="intro-text">
+                                            <h3>Guías Prácticas</h3>
+                                            <p>Los principios no son reglas estrictas, sino guías que ayudan a tomar decisiones en el día a día del desarrollo de software.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="content-section">
+                                <h2><i class="fas fa-star"></i> Principios Fundamentales</h2>
+
+                                <div class="principles-grid">
+                                    <div class="principle-card">
+                                        <div class="principle-number">1</div>
+                                        <div class="principle-content">
+                                            <h3>Satisfacción del Cliente</h3>
+                                            <p class="principle-text">"Nuestra mayor prioridad es satisfacer al cliente mediante la entrega temprana y continua de software de valor."</p>
+                                            <div class="principle-example">
+                                                <h4><i class="fas fa-lightbulb"></i> Aplicación:</h4>
+                                                <p>Entregar incrementos funcionales cada 2-4 semanas con feedback del cliente.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="principle-card">
+                                        <div class="principle-number">2</div>
+                                        <div class="principle-content">
+                                            <h3>Cambios Bienvenidos</h3>
+                                            <p class="principle-text">"Bienvenidos los requisitos cambiantes, incluso tarde en el desarrollo. Los procesos ágiles aprovechan el cambio para proporcionar ventaja competitiva al cliente."</p>
+                                            <div class="principle-example">
+                                                <h4><i class="fas fa-lightbulb"></i> Aplicación:</h4>
+                                                <p>Mantener el backlog flexible y ajustar prioridades basándose en feedback del mercado.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="principle-card">
+                                        <div class="principle-number">3</div>
+                                        <div class="principle-content">
+                                            <h3>Entrega Frecuente</h3>
+                                            <p class="principle-text">"Entregar software funcionando frecuentemente, desde un par de semanas a un par de meses, con preferencia al timescale más corto."</p>
+                                            <div class="principle-example">
+                                                <h4><i class="fas fa-lightbulb"></i> Aplicación:</h4>
+                                                <p>Sprints de 2 semanas con incrementos potencialmente entregables.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="principle-card">
+                                        <div class="principle-number">4</div>
+                                        <div class="principle-content">
+                                            <h3>Colaboración Diaria</h3>
+                                            <p class="principle-text">"Los desarrolladores y los profesionales del negocio deben trabajar juntos diariamente a lo largo de todo el proyecto."</p>
+                                            <div class="principle-example">
+                                                <h4><i class="fas fa-lightbulb"></i> Aplicación:</h4>
+                                                <p>Daily stand-ups, sprint planning y review con stakeholders presentes.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="content-section">
+                                <h2><i class="fas fa-users"></i> Principios de Equipo</h2>
+
+                                <div class="principles-grid">
+                                    <div class="principle-card">
+                                        <div class="principle-number">5</div>
+                                        <div class="principle-content">
+                                            <h3>Proyectos con Personas Motivadas</h3>
+                                            <p class="principle-text">"Construir proyectos en torno a individuos motivados. Darles el entorno y el apoyo que necesitan, y confiarles el trabajo."</p>
+                                            <div class="principle-example">
+                                                <h4><i class="fas fa-lightbulb"></i> Aplicación:</h4>
+                                                <p>Equipos auto-organizados con autonomía para tomar decisiones técnicas.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="principle-card">
+                                        <div class="principle-number">6</div>
+                                        <div class="principle-content">
+                                            <h3>Comunicación Cara a Cara</h3>
+                                            <p class="principle-text">"El método más eficiente y efectivo de comunicar información a un equipo de desarrollo es la conversación cara a cara."</p>
+                                            <div class="principle-example">
+                                                <h4><i class="fas fa-lightbulb"></i> Aplicación:</h4>
+                                                <p>Colocación física del equipo y reuniones presenciales cuando sea posible.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="principle-card">
+                                        <div class="principle-number">7</div>
+                                        <div class="principle-content">
+                                            <h3>Software Funcionando como Medida</h3>
+                                            <p class="principle-text">"El software funcionando es la medida principal de progreso."</p>
+                                            <div class="principle-example">
+                                                <h4><i class="fas fa-lightbulb"></i> Aplicación:</h4>
+                                                <p>Métricas basadas en funcionalidad entregada vs. líneas de código o documentación.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="principle-card">
+                                        <div class="principle-number">8</div>
+                                        <div class="principle-content">
+                                            <h3>Desarrollo Sostenible</h3>
+                                            <p class="principle-text">"Los procesos ágiles promueven el desarrollo sostenible. Los patrocinadores, desarrolladores y usuarios deben ser capaces de mantener un ritmo constante indefinidamente."</p>
+                                            <div class="principle-example">
+                                                <h4><i class="fas fa-lightbulb"></i> Aplicación:</h4>
+                                                <p>Evitar overtime excesivo y mantener un balance trabajo-vida saludable.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="content-section">
+                                <h2><i class="fas fa-rocket"></i> Principios de Excelencia Técnica</h2>
+
+                                <div class="principles-grid">
+                                    <div class="principle-card">
+                                        <div class="principle-number">9</div>
+                                        <div class="principle-content">
+                                            <h3>Atención a la Excelencia Técnica</h3>
+                                            <p class="principle-text">"La atención continua a la excelencia técnica y al buen diseño mejora la agilidad."</p>
+                                            <div class="principle-example">
+                                                <h4><i class="fas fa-lightbulb"></i> Aplicación:</h4>
+                                                <p>Code reviews, refactoring, testing continuo y buenas prácticas de diseño.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="principle-card">
+                                        <div class="principle-number">10</div>
+                                        <div class="principle-content">
+                                            <h3>Simplicidad</h3>
+                                            <p class="principle-text">"La simplicidad - el arte de maximizar la cantidad de trabajo no realizado - es esencial."</p>
+                                            <div class="principle-example">
+                                                <h4><i class="fas fa-lightbulb"></i> Aplicación:</h4>
+                                                <p>YAGNI (You Aren't Gonna Need It) y KISS (Keep It Simple, Stupid).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="principle-card">
+                                        <div class="principle-number">11</div>
+                                        <div class="principle-content">
+                                            <h3>Arquitecturas Emergentes</h3>
+                                            <p class="principle-text">"Las mejores arquitecturas, requisitos y diseños emergen de equipos auto-organizados."</p>
+                                            <div class="principle-example">
+                                                <h4><i class="fas fa-lightbulb"></i> Aplicación:</h4>
+                                                <p>Evolución incremental de la arquitectura basada en necesidades reales.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="principle-card">
+                                        <div class="principle-number">12</div>
+                                        <div class="principle-content">
+                                            <h3>Reflexión y Ajuste</h3>
+                                            <p class="principle-text">"En intervalos regulares, el equipo reflexiona sobre cómo ser más efectivo y ajusta su comportamiento en consecuencia."</p>
+                                            <div class="principle-example">
+                                                <h4><i class="fas fa-lightbulb"></i> Aplicación:</h4>
+                                                <p>Retrospectives al final de cada sprint para mejorar continuamente.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="content-section">
+                                <h2><i class="fas fa-puzzle-piece"></i> Conexión entre Principios</h2>
+                                <p>Los 12 principios están interconectados y se refuerzan mutuamente:</p>
+
+                                <div class="principles-connections">
+                                    <div class="connection-map">
+                                        <div class="principle-group">
+                                            <h4><i class="fas fa-users"></i> Principios de Colaboración</h4>
+                                            <p>Principios 1, 4, 5, 6, 8: Enfocados en personas y comunicación</p>
+                                        </div>
+                                        <div class="principle-group">
+                                            <h4><i class="fas fa-rocket"></i> Principios de Entrega</h4>
+                                            <p>Principios 2, 3, 7: Enfocados en valor y resultados</p>
+                                        </div>
+                                        <div class="principle-group">
+                                            <h4><i class="fas fa-tools"></i> Principios Técnicos</h4>
+                                            <p>Principios 9, 10, 11: Enfocados en calidad y diseño</p>
+                                        </div>
+                                        <div class="principle-group">
+                                            <h4><i class="fas fa-sync"></i> Principios de Mejora</h4>
+                                            <p>Principios 8, 12: Enfocados en sostenibilidad y aprendizaje</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <!-- Elemento Interactivo -->
+                        <div class="interactive-element">
+                            <h3><i class="fas fa-gamepad"></i> Actividad: Aplicando los Principios</h3>
+                            <div class="principles-scenarios">
+                                <p>Selecciona qué principio(s) aplican en cada escenario:</p>
+
+                                <div class="scenario-card">
+                                    <div class="scenario-text">
+                                        <h4>Escenario:</h4>
+                                        <p>Un equipo decide eliminar reuniones innecesarias y implementar daily stand-ups de 15 minutos para mejorar la comunicación.</p>
+                                    </div>
+                                    <div class="scenario-options">
+                                        <label class="principle-checkbox">
+                                            <input type="checkbox" value="1"> 1. Satisfacción del Cliente
+                                        </label>
+                                        <label class="principle-checkbox">
+                                            <input type="checkbox" value="6"> 6. Comunicación Cara a Cara
+                                        </label>
+                                        <label class="principle-checkbox">
+                                            <input type="checkbox" value="12"> 12. Reflexión y Ajuste
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="scenario-feedback">
+                                    <button class="btn btn-primary" onclick="checkPrinciplesScenario()">Verificar Respuesta</button>
+                                    <div id="principlesFeedback" style="display: none;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Resumen y Próximos Pasos -->
+                        <div class="lesson-summary">
+                            <h3><i class="fas fa-clipboard-check"></i> Resumen de la Lección</h3>
+                            <div class="summary-points">
+                                <div class="summary-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Los 12 principios complementan los 4 valores del Manifiesto Ágil</span>
+                                </div>
+                                <div class="summary-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Se agrupan en colaboración, entrega, excelencia técnica y mejora</span>
+                                </div>
+                                <div class="summary-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Proporcionan guías prácticas para implementación diaria</span>
+                                </div>
+                                <div class="summary-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Fomentan equipos auto-organizados y sostenibles</span>
+                                </div>
+                            </div>
+
+                            <div class="next-lesson">
+                                <h4>🎯 Próxima Lección</h4>
+                                <p>En la siguiente lección compararemos detalladamente el enfoque ágil vs el enfoque tradicional de desarrollo de software.</p>
+                                <p>Antes de continuar, marca esta lección como completada para desbloquear la siguiente.</p>
+                                <div class="completion-buttons">
+                                    <button class="btn btn-success" onclick="markCurrentLessonComplete()">
+                                        <i class="fas fa-check"></i> Lección Completada
+                                    </button>
+                                    <button class="btn btn-primary" onclick="nextLesson()" disabled>
+                                        Siguiente Lección <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="lesson-content" id="lesson-5" style="display: none;">
+                        <header class="lesson-header">
+                            <h1>1.5 Comparación: Ágil vs Tradicional</h1>
+                            <div class="lesson-meta">
+                                <span><i class="fas fa-clock"></i> 20 minutos</span>
+                                <span><i class="fas fa-signal"></i> Intermedio</span>
+                                <span><i class="fas fa-star"></i> 60 puntos</span>
+                            </div>
+                        </header>
+
+                        <!-- Video Principal -->
+                        <div class="video-container">
+                            <div class="video-player">
+                                <div class="video-placeholder lesson-5">
+                                    <div class="video-text">
+                                        <i class="fas fa-play-circle video-icon"></i>
+                                        <div>Ágil vs Tradicional</div>
+                                    </div>
+                                    <div class="video-overlay">
+                                        <button class="play-btn">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                        <span class="video-duration">20:18</span>
+                                    </div>
+                                </div>
+                                <div class="video-controls">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                    <div class="controls-row">
+                                        <button class="control-btn"><i class="fas fa-play"></i></button>
+                                        <button class="control-btn"><i class="fas fa-volume-up"></i></button>
+                                        <span class="time-display">0:00 / 20:18</span>
+                                        <button class="control-btn"><i class="fas fa-cog"></i></button>
+                                        <button class="control-btn"><i class="fas fa-expand"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contenido Teórico -->
+                        <div class="content-sections">
+                            <section class="content-section">
+                                <h2><i class="fas fa-balance-scale"></i> Dos Enfoques Fundamentales</h2>
+                                <p>El desarrollo de software puede abordarse desde dos perspectivas fundamentalmente diferentes: el enfoque tradicional (secuencial) y el enfoque ágil (iterativo). Cada uno tiene sus propias características, ventajas y desventajas.</p>
+
+                                <div class="approach-overview">
+                                    <div class="approach-card traditional">
+                                        <div class="approach-header">
+                                            <i class="fas fa-water"></i>
+                                            <h3>Modelo Tradicional (Waterfall)</h3>
+                                        </div>
+                                        <p>Enfoque secuencial y lineal donde cada fase debe completarse antes de comenzar la siguiente.</p>
+                                    </div>
+                                    <div class="vs-separator">
+                                        <span>VS</span>
+                                    </div>
+                                    <div class="approach-card agile">
+                                        <div class="approach-header">
+                                            <i class="fas fa-bolt"></i>
+                                            <h3>Enfoque Ágil</h3>
+                                        </div>
+                                        <p>Enfoque iterativo e incremental con ciclos cortos y retroalimentación continua.</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="content-section">
+                                <h2><i class="fas fa-table"></i> Comparación Detallada</h2>
+
+                                <div class="comparison-table">
+                                    <table class="methods-comparison">
+                                        <thead>
+                                            <tr>
+                                                <th>Aspecto</th>
+                                                <th>Enfoque Tradicional</th>
+                                                <th>Enfoque Ágil</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Planificación</strong></td>
+                                                <td>Exhaustiva al inicio</td>
+                                                <td>Continua y adaptativa</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Requisitos</strong></td>
+                                                <td>Fijos desde el inicio</td>
+                                                <td>Evolucionan durante el proyecto</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Diseño</strong></td>
+                                                <td>Completo antes de codificar</td>
+                                                <td>Emerge y evoluciona</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Desarrollo</strong></td>
+                                                <td>Secuencial</td>
+                                                <td>Iterativo e incremental</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Testing</strong></td>
+                                                <td>Al final del desarrollo</td>
+                                                <td>Continuo durante todo el proceso</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Entrega</strong></td>
+                                                <td>Al final del proyecto</td>
+                                                <td>Incremental y frecuente</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Cliente</strong></td>
+                                                <td>Involucrado al inicio y final</td>
+                                                <td>Colaboración continua</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+
+                            <section class="content-section">
+                                <h2><i class="fas fa-thumbs-up"></i> Ventajas y Desventajas</h2>
+
+                                <div class="comparison-cards">
+                                    <div class="advantages-card">
+                                        <h3><i class="fas fa-water"></i> Modelo Tradicional</h3>
+
+                                        <div class="advantages">
+                                            <h4><i class="fas fa-check-circle"></i> Ventajas:</h4>
+                                            <ul>
+                                                <li>Predecible y estructurado</li>
+                                                <li>Clara división de responsabilidades</li>
+                                                <li>Adecuado para proyectos simples</li>
+                                                <li>Fácil de gestionar</li>
+                                                <li>Documentación completa</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="disadvantages">
+                                            <h4><i class="fas fa-times-circle"></i> Desventajas:</h4>
+                                            <ul>
+                                                <li>Inflexible a cambios</li>
+                                                <li>Retrasa la entrega de valor</li>
+                                                <li>Alto riesgo de fracaso</li>
+                                                <li>Comunicación limitada</li>
+                                                <li>Problemas detectados tarde</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="advantages-card">
+                                        <h3><i class="fas fa-bolt"></i> Enfoque Ágil</h3>
+
+                                        <div class="advantages">
+                                            <h4><i class="fas fa-check-circle"></i> Ventajas:</h4>
+                                            <ul>
+                                                <li>Adaptable a cambios</li>
+                                                <li>Entrega temprana de valor</li>
+                                                <li>Mayor satisfacción del cliente</li>
+                                                <li>Reducción de riesgos</li>
+                                                <li>Mejor calidad del producto</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="disadvantages">
+                                            <h4><i class="fas fa-times-circle"></i> Desventajas:</h4>
+                                            <ul>
+                                                <li>Requiere disciplina</li>
+                                                <li>Puede ser impredecible</li>
+                                                <li>Necesita colaboración activa</li>
+                                                <li>Desafío de estimación</li>
+                                                <li>Cambio cultural requerido</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="content-section">
+                                <h2><i class="fas fa-project-diagram"></i> Visualización de Procesos</h2>
+
+                                <div class="process-flows">
+                                    <div class="process-flow traditional">
+                                        <h4><i class="fas fa-water"></i> Flujo Tradicional</h4>
+                                        <div class="flow-diagram">
+                                            <div class="flow-step">Requisitos</div>
+                                            <div class="flow-arrow">→</div>
+                                            <div class="flow-step">Diseño</div>
+                                            <div class="flow-arrow">→</div>
+                                            <div class="flow-step">Desarrollo</div>
+                                            <div class="flow-arrow">→</div>
+                                            <div class="flow-step">Testing</div>
+                                            <div class="flow-arrow">→</div>
+                                            <div class="flow-step">Despliegue</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="process-flow agile">
+                                        <h4><i class="fas fa-sync"></i> Flujo Ágil</h4>
+                                        <div class="flow-diagram">
+                                            <div class="sprint-box">
+                                                <h5>Sprint 1</h5>
+                                                <div class="mini-flow">Plan → Dev → Test → Review</div>
+                                            </div>
+                                            <div class="flow-arrow">↻</div>
+                                            <div class="sprint-box">
+                                                <h5>Sprint 2</h5>
+                                                <div class="mini-flow">Plan → Dev → Test → Review</div>
+                                            </div>
+                                            <div class="flow-arrow">↻</div>
+                                            <div class="sprint-box">
+                                                <h5>Sprint n...</h5>
+                                                <div class="mini-flow">Plan → Dev → Test → Review</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="content-section">
+                                <h2><i class="fas fa-industry"></i> Cuándo Usar Cada Enfoque</h2>
+
+                                <div class="when-to-use">
+                                    <div class="use-case-card">
+                                        <h3><i class="fas fa-water"></i> Cuándo usar Modelo Tradicional:</h3>
+                                        <ul>
+                                            <li>Proyectos con requisitos muy claros y estables</li>
+                                            <li>Industrias altamente reguladas (aeroespacial, médica)</li>
+                                            <li>Proyectos pequeños y simples</li>
+                                            <li>Donde la documentación es crítica</li>
+                                            <li>Equipos distribuidos con poca colaboración</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="use-case-card">
+                                        <h3><i class="fas fa-bolt"></i> Cuándo usar Enfoque Ágil:</h3>
+                                        <ul>
+                                            <li>Proyectos con requisitos inciertos o cambiantes</li>
+                                            <li>Productos innovadores y startups</li>
+                                            <li>Proyectos complejos con alta incertidumbre</li>
+                                            <li>Donde el time-to-market es crítico</li>
+                                            <li>Equipos colaborativos y auto-organizados</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="content-section">
+                                <h2><i class="fas fa-chart-line"></i> Métricas de Éxito</h2>
+
+                                <div class="metrics-comparison">
+                                    <div class="metric-card">
+                                        <h4><i class="fas fa-water"></i> Métricas Tradicionales</h4>
+                                        <ul>
+                                            <li>Cumplimiento de cronograma</li>
+                                            <li>Cumplimiento de presupuesto</li>
+                                            <li>Calidad de documentación</li>
+                                            <li>Número de defectos encontrados</li>
+                                            <li>Alineación con especificaciones</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="metric-card">
+                                        <h4><i class="fas fa-bolt"></i> Métricas Ágiles</h4>
+                                        <ul>
+                                            <li>Velocity del equipo</li>
+                                            <li>Lead time y Cycle time</li>
+                                            <li>Satisfacción del cliente</li>
+                                            <li>ROI del proyecto</li>
+                                            <li>Valor entregado por sprint</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <!-- Elemento Interactivo -->
+                        <div class="interactive-element">
+                            <h3><i class="fas fa-gamepad"></i> Actividad: Clasificación de Características</h3>
+                            <div class="classification-game">
+                                <p>Arrastra cada característica al enfoque correspondiente:</p>
+
+                                <div class="classification-area">
+                                    <div class="target-area traditional">
+                                        <h4><i class="fas fa-water"></i> Modelo Tradicional</h4>
+                                        <div class="drop-zone" data-method="traditional"></div>
+                                    </div>
+
+                                    <div class="target-area agile">
+                                        <h4><i class="fas fa-bolt"></i> Enfoque Ágil</h4>
+                                        <div class="drop-zone" data-method="agile"></div>
+                                    </div>
+                                </div>
+
+                                <div class="characteristics-pool">
+                                    <div class="characteristic-item" draggable="true" data-correct="traditional">
+                                        <i class="fas fa-file-alt"></i> Documentación extensiva
+                                    </div>
+                                    <div class="characteristic-item" draggable="true" data-correct="agile">
+                                        <i class="fas fa-sync"></i> Iteraciones cortas
+                                    </div>
+                                    <div class="characteristic-item" draggable="true" data-correct="agile">
+                                        <i class="fas fa-users"></i> Colaboración continua
+                                    </div>
+                                    <div class="characteristic-item" draggable="true" data-correct="traditional">
+                                        <i class="fas fa-list-ol"></i> Planificación detallada inicial
+                                    </div>
+                                    <div class="characteristic-item" draggable="true" data-correct="agile">
+                                        <i class="fas fa-chart-line"></i> Adaptabilidad al cambio
+                                    </div>
+                                    <div class="characteristic-item" draggable="true" data-correct="traditional">
+                                        <i class="fas fa-arrow-right"></i> Proceso secuencial
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Resumen y Próximos Pasos -->
+                        <div class="lesson-summary">
+                            <h3><i class="fas fa-clipboard-check"></i> Resumen de la Lección</h3>
+                            <div class="summary-points">
+                                <div class="summary-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Los enfoques difieren fundamentalmente en planificación y ejecución</span>
+                                </div>
+                                <div class="summary-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Cada enfoque tiene ventajas y desventajas según el contexto</span>
+                                </div>
+                                <div class="summary-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Las métricas de éxito también difieren entre ambos enfoques</span>
+                                </div>
+                                <div class="summary-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>La elección depende del tipo de proyecto y contexto organizacional</span>
+                                </div>
+                            </div>
+
+                            <div class="next-lesson">
+                                <h4>🎯 Próxima Lección</h4>
+                                <p>En la última lección de la semana analizaremos los beneficios y desafíos de implementar metodologías ágiles en organizaciones.</p>
+                                <p>Antes de continuar, marca esta lección como completada para desbloquear la siguiente.</p>
+                                <div class="completion-buttons">
+                                    <button class="btn btn-success" onclick="markCurrentLessonComplete()">
+                                        <i class="fas fa-check"></i> Lección Completada
+                                    </button>
+                                    <button class="btn btn-primary" onclick="nextLesson()" disabled>
+                                        Siguiente Lección <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="lesson-content" id="lesson-6" style="display: none;">
+                        <header class="lesson-header">
+                            <h1>1.6 Beneficios y Desafíos</h1>
+                            <div class="lesson-meta">
+                                <span><i class="fas fa-clock"></i> 15 minutos</span>
+                                <span><i class="fas fa-signal"></i> Principiante</span>
+                                <span><i class="fas fa-star"></i> 50 puntos</span>
+                            </div>
+                        </header>
+
+                        <!-- Video Principal -->
+                        <div class="video-container">
+                            <div class="video-player">
+                                <div class="video-placeholder lesson-6">
+                                    <div class="video-text">
+                                        <i class="fas fa-play-circle video-icon"></i>
+                                        <div>Beneficios y Desafíos</div>
+                                    </div>
+                                    <div class="video-overlay">
+                                        <button class="play-btn">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                        <span class="video-duration">15:42</span>
+                                    </div>
+                                </div>
+                                <div class="video-controls">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                    <div class="controls-row">
+                                        <button class="control-btn"><i class="fas fa-play"></i></button>
+                                        <button class="control-btn"><i class="fas fa-volume-up"></i></button>
+                                        <span class="time-display">0:00 / 15:42</span>
+                                        <button class="control-btn"><i class="fas fa-cog"></i></button>
+                                        <button class="control-btn"><i class="fas fa-expand"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contenido Teórico -->
+                        <div class="content-sections">
+                            <section class="content-section">
+                                <h2><i class="fas fa-trophy"></i> Beneficios de las Metodologías Ágiles</h2>
+                                <p>Las metodologías ágiles ofrecen numerosos beneficios que han impulsado su adopción masiva en la industria del software y más allá.</p>
+
+                                <div class="benefits-categories">
+                                    <div class="benefits-grid">
+                                        <div class="benefit-category">
+                                            <h3><i class="fas fa-user"></i> Para el Cliente</h3>
+                                            <div class="benefits-list">
+                                                <div class="benefit-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Mayor satisfacción con el producto final</span>
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Visibilidad temprana del progreso</span>
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Capacidad de ajustar requisitos</span>
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Entrega más rápida de valor</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="benefit-category">
+                                            <h3><i class="fas fa-users"></i> Para el Equipo</h3>
+                                            <div class="benefits-list">
+                                                <div class="benefit-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Mayor motivación y compromiso</span>
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Auto-organización y empoderamiento</span>
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Mejor comunicación y colaboración</span>
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Desarrollo profesional continuo</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="benefit-category">
+                                            <h3><i class="fas fa-building"></i> Para la Organización</h3>
+                                            <div class="benefits-list">
+                                                <div class="benefit-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Reducción del time-to-market</span>
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Mejor gestión de riesgos</span>
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Mayor ROI del proyecto</span>
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Adaptabilidad al mercado</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="benefit-category">
+                                            <h3><i class="fas fa-box"></i> Para el Producto</h3>
+                                            <div class="benefits-list">
+                                                <div class="benefit-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Mayor calidad del software</span>
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Mejor alineación con necesidades reales</span>
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Reducción de características innecesarias</span>
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Evolución basada en feedback real</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Estadísticas de Impacto -->
+                                <div class="impact-stats">
+                                    <h3><i class="fas fa-chart-bar"></i> Estadísticas de Impacto</h3>
+                                    <div class="stats-grid">
+                                        <div class="stat-card">
+                                            <div class="stat-number">64%</div>
+                                            <div class="stat-label">Mejora en productividad</div>
+                                        </div>
+                                        <div class="stat-card">
+                                            <div class="stat-number">60%</div>
+                                            <div class="stat-label">Reducción en time-to-market</div>
+                                        </div>
+                                        <div class="stat-card">
+                                            <div class="stat-number">85%</div>
+                                            <div class="stat-label">Satisfacción del cliente</div>
+                                        </div>
+                                        <div class="stat-card">
+                                            <div class="stat-number">75%</div>
+                                            <div class="stat-label">Mejora en calidad del producto</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="content-section">
+                                <h2><i class="fas fa-exclamation-triangle"></i> Desafíos Comunes</h2>
+                                <p>La adopción de metodologías ágiles presenta desafíos significativos que las organizaciones deben superar para tener éxito.</p>
+
+                                <div class="challenges-categories">
+                                    <div class="challenges-grid">
+                                        <div class="challenge-category">
+                                            <h3><i class="fas fa-brain"></i> Culturales</h3>
+                                            <div class="challenges-list">
+                                                <div class="challenge-item">
+                                                    <i class="fas fa-times-circle"></i>
+                                                    <span>Resistencia al cambio</span>
+                                                </div>
+                                                <div class="challenge-item">
+                                                    <i class="fas fa-times-circle"></i>
+                                                    <span>Mentalidad tradicional arraigada</span>
+                                                </div>
+                                                <div class="challenge-item">
+                                                    <i class="fas fa-times-circle"></i>
+                                                    <span>Falta de confianza en equipos</span>
+                                                </div>
+                                                <div class="challenge-item">
+                                                    <i class="fas fa-times-circle"></i>
+                                                    <span>Dificultad para ceder control</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="challenge-category">
+                                            <h3><i class="fas fa-sitemap"></i> Organizacionales</h3>
+                                            <div class="challenges-list">
+                                                <div class="challenge-item">
+                                                    <i class="fas fa-times-circle"></i>
+                                                    <span>Falta de apoyo de la dirección</span>
+                                                </div>
+                                                <div class="challenge-item">
+                                                    <i class="fas fa-times-circle"></i>
+                                                    <span>Estructuras jerárquicas rígidas</span>
+                                                </div>
+                                                <div class="challenge-item">
+                                                    <i class="fas fa-times-circle"></i>
+                                                    <span>Procesos burocráticos</span>
+                                                </div>
+                                                <div class="challenge-item">
+                                                    <i class="fas fa-times-circle"></i>
+                                                    <span>Presupuestos y contratos tradicionales</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="challenge-category">
+                                            <h3><i class="fas fa-code"></i> Técnicos</h3>
+                                            <div class="challenges-list">
+                                                <div class="challenge-item">
+                                                    <i class="fas fa-times-circle"></i>
+                                                    <span>Falta de habilidades técnicas</span>
+                                                </div>
+                                                <div class="challenge-item">
+                                                    <i class="fas fa-times-circle"></i>
+                                                    <span>Dificultad de estimación</span>
+                                                </div>
+                                                <div class="challenge-item">
+                                                    <i class="fas fa-times-circle"></i>
+                                                    <span>Refactorización constante</span>
+                                                </div>
+                                                <div class="challenge-item">
+                                                    <i class="fas fa-times-circle"></i>
+                                                    <span>Integración continua compleja</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="challenge-category">
+                                            <h3><i class="fas fa-graduation-cap"></i> De Implementación</h3>
+                                            <div class="challenges-list">
+                                                <div class="challenge-item">
+                                                    <i class="fas fa-times-circle"></i>
+                                                    <span>Entrenamiento insuficiente</span>
+                                                </div>
+                                                <div class="challenge-item">
+                                                    <i class="fas fa-times-circle"></i>
+                                                    <span>Expectativas irreales</span>
+                                                </div>
+                                                <div class="challenge-item">
+                                                    <i class="fas fa-times-circle"></i>
+                                                    <span>Implementación parcial</span>
+                                                </div>
+                                                <div class="challenge-item">
+                                                    <i class="fas fa-times-circle"></i>
+                                                    <span>Falta de coaching adecuado</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="content-section">
+                                <h2><i class="fas fa-route"></i> Factores Críticos de Éxito</h2>
+                                <p>Para superar los desafíos y maximizar los beneficios, las organizaciones deben enfocarse en estos factores críticos:</p>
+
+                                <div class="success-factors">
+                                    <div class="factor-grid">
+                                        <div class="factor-card">
+                                            <div class="factor-icon">
+                                                <i class="fas fa-handshake"></i>
+                                            </div>
+                                            <h3>Compromiso de la Dirección</h3>
+                                            <p>Apoyo activo y visible de los líderes para la transformación ágil.</p>
+                                        </div>
+
+                                        <div class="factor-card">
+                                            <div class="factor-icon">
+                                                <i class="fas fa-graduation-cap"></i>
+                                            </div>
+                                            <h3>Entrenamiento y Coaching</h3>
+                                            <p>Inversión continua en desarrollo de habilidades y guía experta.</p>
+                                        </div>
+
+                                        <div class="factor-card">
+                                            <div class="factor-icon">
+                                                <i class="fas fa-hourglass-half"></i>
+                                            </div>
+                                            <h3>Paciencia y Persistencia</h3>
+                                            <p>Reconocimiento de que la transformación ágil es un viaje largo.</p>
+                                        </div>
+
+                                        <div class="factor-card">
+                                            <div class="factor-icon">
+                                                <i class="fas fa-sync"></i>
+                                            </div>
+                                            <h3>Mentalidad de Mejora Continua</h3>
+                                            <p>Foco en el aprendizaje y adaptación constantes.</p>
+                                        </div>
+
+                                        <div class="factor-card">
+                                            <div class="factor-icon">
+                                                <i class="fas fa-users"></i>
+                                            </div>
+                                            <h3>Colaboración Activa del Cliente</h3>
+                                            <p>Involucramiento continuo del cliente en el proceso.</p>
+                                        </div>
+
+                                        <div class="factor-card">
+                                            <div class="factor-icon">
+                                                <i class="fas fa-tools"></i>
+                                            </div>
+                                            <h3>Herramientas Apropiadas</h3>
+                                            <p>Selección de herramientas que soporten el trabajo ágil.</p>
+                                        </div>
+
+                                        <div class="factor-card">
+                                            <div class="factor-icon">
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <h3>Cultura de Confianza</h3>
+                                            <p>Ambiente donde los equipos se sienten seguros para experimentar.</p>
+                                        </div>
+
+                                        <div class="factor-card">
+                                            <div class="factor-icon">
+                                                <i class="fas fa-chart-line"></i>
+                                            </div>
+                                            <h3>Métricas y Medición</h3>
+                                            <p>Sistema de medición que refleje valores ágiles.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="content-section">
+                                <h2><i class="fas fa-balance-scale"></i> Balance Final</h2>
+                                <p>Las metodologías ágiles no son una solución mágica, sino un enfoque que requiere compromiso, adaptación y aprendizaje continuo.</p>
+
+                                <div class="balance-perspective">
+                                    <div class="balance-card">
+                                        <h3><i class="fas fa-star"></i> Cuando Funciona Bien</h3>
+                                        <ul>
+                                            <li>Equipos motivados y colaborativos</li>
+                                            <li>Apoyo organizacional consistente</li>
+                                            <li>Clientes comprometidos y participativos</li>
+                                            <li>Liderazgo empoderador</li>
+                                            <li>Mentalidad de aprendizaje continuo</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="balance-card">
+                                        <h3><i class="fas fa-exclamation-circle"></i> Señales de Advertencia</h3>
+                                        <ul>
+                                            <li>Resistencia organizacional persistente</li>
+                                            <li>Falta de compromiso del cliente</li>
+                                            <li>Equipos desmotivados o sobrecargados</li>
+                                            <li>Focus en herramientas sobre cultura</li>
+                                            <li>Expectativas irreales de resultados rápidos</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <!-- Elemento Interactivo -->
+                        <div class="interactive-element">
+                            <h3><i class="fas fa-gamepad"></i> Evaluación de Preparación Ágil</h3>
+                            <div class="readiness-assessment">
+                                <p>Evalúa el nivel de preparación de tu organización para adoptar metodologías ágiles:</p>
+
+                                <div class="assessment-questions">
+                                    <div class="question-card">
+                                        <h4>1. Compromiso Liderazgo</h4>
+                                        <p>¿Qué tan comprometida está la dirección con la transformación ágil?</p>
+                                        <div class="scale-options">
+                                            <label><input type="radio" name="leadership" value="1"> Muy bajo</label>
+                                            <label><input type="radio" name="leadership" value="2"> Bajo</label>
+                                            <label><input type="radio" name="leadership" value="3"> Medio</label>
+                                            <label><input type="radio" name="leadership" value="4"> Alto</label>
+                                            <label><input type="radio" name="leadership" value="5"> Muy alto</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="question-card">
+                                        <h4>2. Cultura Organizacional</h4>
+                                        <p>¿Qué tan abierta es la cultura al cambio y la colaboración?</p>
+                                        <div class="scale-options">
+                                            <label><input type="radio" name="culture" value="1"> Muy resistente</label>
+                                            <label><input type="radio" name="culture" value="2"> Resistente</label>
+                                            <label><input type="radio" name="culture" value="3"> Neutral</label>
+                                            <label><input type="radio" name="culture" value="4"> Abierta</label>
+                                            <label><input type="radio" name="culture" value="5"> Muy abierta</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="question-card">
+                                        <h4>3. Habilidades Técnicas</h4>
+                                        <p>¿Qué nivel de habilidades técnicas tiene el equipo?</p>
+                                        <div class="scale-options">
+                                            <label><input type="radio" name="skills" value="1"> Muy bajo</label>
+                                            <label><input type="radio" name="skills" value="2"> Bajo</label>
+                                            <label><input type="radio" name="skills" value="3"> Medio</label>
+                                            <label><input type="radio" name="skills" value="4"> Alto</label>
+                                            <label><input type="radio" name="skills" value="5"> Muy alto</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-primary" onclick="calculateAgileReadiness()">
+                                    Calcular Preparación Ágil
                                 </button>
+
+                                <div id="readinessResult" style="display: none;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Resumen y Conclusión de la Semana -->
+                        <div class="lesson-summary">
+                            <h3><i class="fas fa-clipboard-check"></i> Resumen de la Lección</h3>
+                            <div class="summary-points">
+                                <div class="summary-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Las metodologías ágiles ofrecen beneficios significativos en múltiples áreas</span>
+                                </div>
+                                <div class="summary-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Presentan desafíos culturales, organizacionales y técnicos</span>
+                                </div>
+                                <div class="summary-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>El éxito depende de factores críticos como liderazgo y cultura</span>
+                                </div>
+                                <div class="summary-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Requiere enfoque balanceado y expectativas realistas</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navegación de Lección -->
+                        <div class="lesson-navigation">
+                            <p>Antes de continuar a las actividades finales, marca esta lección como completada.</p>
+                            <div class="completion-buttons">
+                                <button class="btn btn-success" onclick="markCurrentLessonComplete()">
+                                    <i class="fas fa-check"></i> Lección Completada
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Resumen y Conclusión de la Semana -->
+                        <div class="lesson-summary">
+                            <div class="week-completion">
+                                <h4>🎉 ¡Felicitaciones!</h4>
+                                <p>Has completado la Semana 1 del curso de Metodologías Ágiles. Ahora tienes una comprensión sólida de los fundamentos, historia, valores, principios y consideraciones prácticas de las metodologías ágiles.</p>
+
+                                <div class="next-steps">
+                                    <h5>Próximos Pasos:</h5>
+                                    <ul>
+                                        <li>Completa el quiz semanal para evaluar tu conocimiento</li>
+                                        <li>Desarrolla el proyecto práctico de la semana</li>
+                                        <li>Participa en el foro de discusión</li>
+                                        <li>Prepárate para la Semana 2: Scrum Framework</li>
+                                    </ul>
+                                </div>
+
+                                <div class="completion-actions">
+                                    <button class="btn btn-primary" onclick="goToWeeklyQuiz()">
+                                        <i class="fas fa-clipboard-check"></i> Quiz Semanal
+                                    </button>
+                                    <button class="btn btn-secondary" onclick="goToProject()">
+                                        <i class="fas fa-project-diagram"></i> Proyecto Práctico
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </article>
