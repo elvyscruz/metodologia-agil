@@ -1,0 +1,661 @@
+{
+  "semana": 1,
+  "titulo": "Introducción a las Metodologías Ágiles",
+  "descripcion": "Fundamentos de las metodologías ágiles, su historia y principios básicos",
+  "objetivos": [
+    "Comprender qué son las metodologías ágiles",
+    "Conocer la historia y orígenes del movimiento ágil",
+    "Entender los principios del Manifiesto Ágil",
+    "Comparar enfoques ágiles vs tradicionales",
+    "Identificar beneficios y desafíos de las metodologías ágiles"
+  ],
+  "lecciones": [
+    {
+      "id": 1,
+      "titulo": "1.1 ¿Qué son las Metodologías Ágiles?",
+      "duracion": 15,
+      "puntos": 50,
+      "tipo": "video",
+      "contenido": {
+        "video": {
+          "url": "videos/leccion1-1.mp4",
+          "duracion": "15:23",
+          "subtitulos": "es"
+        },
+        "conceptos_clave": [
+          "Definición de metodologías ágiles",
+          "Iteración e incrementalidad",
+          "Adaptabilidad al cambio",
+          "Entrega temprana de valor"
+        ],
+        "resumen": "Las metodologías ágiles son un conjunto de prácticas que permiten a los equipos desarrollar software de manera iterativa e incremental, adaptándose rápidamente a los cambios y entregando valor de forma continua.",
+        "lecturas": [
+          {
+            "titulo": "Introducción al Desarrollo Ágil de Software",
+            "tipo": "pdf",
+            "url": "recursos/introduccion-agil.pdf",
+            "paginas": 15
+          }
+        ]
+      },
+      "evaluacion": {
+        "tipo": "quiz",
+        "preguntas": [
+          {
+            "pregunta": "¿Cuál es la característica principal que distingue a las metodologías ágiles de las tradicionales?",
+            "opciones": [
+              "Documentación extensa y detallada",
+              "Adaptabilidad al cambio y entrega iterativa",
+              "Planificación rígida y secuencial",
+              "Enfoque únicamente en tecnología"
+            ],
+            "respuesta_correcta": 1,
+            "explicacion": "Las metodologías ágiles se caracterizan por su capacidad para adaptarse rápidamente a los cambios y entregar valor de forma iterativa."
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "1.2 Historia y Orígenes",
+      "duracion": 20,
+      "puntos": 60,
+      "tipo": "video",
+      "contenido": {
+        "video": {
+          "url": "videos/leccion1-2.mp4",
+          "duracion": "20:15",
+          "subtitulos": "es"
+        },
+        "conceptos_clave": [
+          "Crisis del software en los años 90",
+          "Limitaciones del modelo en cascada",
+          "Desarrollo rápido de aplicaciones (RAD)",
+          "Programación extrema (XP)",
+          "Scrum早期的発展"
+        ],
+        "linea_tiempo": [
+          {
+            "año": 1990,
+            "evento": "Ken Schwaber desarrolla Scrum",
+            "descripcion": "Scrum surge como framework para gestión de proyectos complejos"
+          },
+          {
+            "año": 1996,
+            "evento": "Kent Beck crea Extreme Programming (XP)",
+            "descripcion": "XP introduce prácticas como pair programming y TDD"
+          },
+          {
+            "año": 2001,
+            "evento": "Manifiesto Ágil",
+            "descripcion": "17 expertos se reúnen y crean el Manifiesto Ágil"
+          }
+        ],
+        "resumen": "El movimiento ágil surgió como respuesta a las limitaciones de las metodologías tradicionales, evolucionando a través de diversas prácticas hasta consolidarse en 2001 con el Manifiesto Ágil."
+      },
+      "evaluacion": {
+        "tipo": "quiz",
+        "preguntas": [
+          {
+            "pregunta": "¿En qué año se publicó el Manifiesto Ágil?",
+            "opciones": ["1995", "1998", "2001", "2005"],
+            "respuesta_correcta": 2,
+            "explicacion": "El Manifiesto Ágil fue publicado en 2001 por 17 expertos en desarrollo de software."
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "1.3 El Manifiesto Ágil",
+      "duracion": 25,
+      "puntos": 80,
+      "tipo": "interactivo",
+      "contenido": {
+        "video": {
+          "url": "videos/leccion1-3.mp4",
+          "duracion": "25:30",
+          "subtitulos": "es"
+        },
+        "valores": [
+          {
+            "valor": "Individuos e interacciones",
+            "descripcion": "Más que procesos y herramientas",
+            "explicacion": "Valoramos a las personas y su colaboración por encima de los procesos rígidos y las herramientas sofisticadas.",
+            "ejemplo": "Un equipo que prefiere reuniones cara a cara en lugar de documentación extensa"
+          },
+          {
+            "valor": "Software funcionando",
+            "descripcion": "Más que documentación extensiva",
+            "explicacion": "Priorizamos entregar software que funcione y aporte valor sobre crear documentación detallada.",
+            "ejemplo": "Entregar un prototipo funcional en lugar de un documento de especificaciones de 100 páginas"
+          },
+          {
+            "valor": "Colaboración con el cliente",
+            "descripcion": "Más que negociación contractual",
+            "explicacion": "Buscamos una colaboración continua con el cliente durante todo el proyecto.",
+            "ejemplo": "Reuniones diarias con el cliente para ajustar requisitos"
+          },
+          {
+            "valor": "Respuesta ante el cambio",
+            "descripcion": "Más que seguir un plan",
+            "explicacion": "Nos adaptamos a los cambios incluso en etapas tardías del desarrollo.",
+            "ejemplo": "Modificar prioridades del backlog basado en feedback del usuario"
+          }
+        ],
+        "autores": [
+          "Kent Beck (Extreme Programming)",
+          "Mike Beedle (Scrum)",
+          "Arie van Bennekum",
+          "Alistair Cockburn",
+          "Ward Cunningham (Extreme Programming)",
+          "Martin Fowler",
+          "James Grenning",
+          "Jim Highsmith",
+          "Andrew Hunt",
+          "Ron Jeffries (Extreme Programming)",
+          "Jon Kern",
+          "Brian Marick",
+          "Robert C. Martin (Uncle Bob)",
+          "Steve Mellor",
+          "Ken Schwaber (Scrum)",
+          "Jeff Sutherland (Scrum)",
+          "Dave Thomas"
+        ],
+        "resumen": "El Manifiesto Ágil establece cuatro valores fundamentales que guían el desarrollo de software ágil, enfocándose en personas, funcionalidad, colaboración y adaptabilidad."
+      },
+      "evaluacion": {
+        "tipo": "drag_drop",
+        "instrucciones": "Arrastra cada valor del Manifiesto Ágil a su descripción correspondiente",
+        "items": [
+          {
+            "item": "Individuos e interacciones",
+            "match": "Más que procesos y herramientas"
+          },
+          {
+            "item": "Software funcionando",
+            "match": "Más que documentación extensiva"
+          },
+          {
+            "item": "Colaboración con el cliente",
+            "match": "Más que negociación contractual"
+          },
+          {
+            "item": "Respuesta ante el cambio",
+            "match": "Más que seguir un plan"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "1.4 Principios Ágiles",
+      "duracion": 30,
+      "puntos": 100,
+      "tipo": "video",
+      "contenido": {
+        "video": {
+          "url": "videos/leccion1-4.mp4",
+          "duracion": "30:45",
+          "subtitulos": "es"
+        },
+        "principios": [
+          {
+            "numero": 1,
+            "principio": "Nuestra mayor prioridad es satisfacer al cliente",
+            "descripcion": "mediante la entrega temprana y continua de software de valor.",
+            "aplicacion": "Entregas incrementales cada 2-4 semanas"
+          },
+          {
+            "numero": 2,
+            "principio": "Bienvenidos los requisitos cambiantes",
+            "descripcion": "aunque sea tarde en el desarrollo. Los procesos ágiles aprovechan el cambio para proporcionar ventaja competitiva al cliente.",
+            "aplicacion": "Backlog flexible y priorización dinámica"
+          },
+          {
+            "numero": 3,
+            "principio": "Entregar software funcionando frecuentemente",
+            "descripcion": "desde un par de semanas a un par de meses, con preferencia al timescale más corto.",
+            "aplicacion": "Sprints de 2 semanas con entregables"
+          },
+          {
+            "numero": 4,
+            "principio": "Los desarrolladores y los profesionales del negocio deben trabajar juntos",
+            "descripcion": "diariamente a lo largo de todo el proyecto.",
+            "aplicacion": "Daily stand-ups y colaboración continua"
+          },
+          {
+            "numero": 5,
+            "principio": "Construir proyectos en torno a individuos motivados",
+            "descripcion": "dándoles el entorno y el apoyo que necesitan, y confiándoles el trabajo.",
+            "aplicacion": "Equipos auto-organizados y empoderados"
+          },
+          {
+            "numero": 6,
+            "principio": "El método más eficiente y efectivo de comunicar información",
+            "descripcion": "es la conversación cara a cara.",
+            "aplicacion": "Reuniones presenciales y comunicación directa"
+          },
+          {
+            "numero": 7,
+            "principio": "El software funcionando es la medida principal de progreso.",
+            "descripcion": "",
+            "aplicacion": "Métricas basadas en entregables funcionales"
+          },
+          {
+            "numero": 8,
+            "principio": "Los procesos ágiles promueven el desarrollo sostenible.",
+            "descripcion": "Los patrocinadores, desarrolladores y usuarios deben poder mantener un ritmo constante indefinidamente.",
+            "aplicacion": "Balance trabajo-vida y evitar burnout"
+          },
+          {
+            "numero": 9,
+            "principio": "La atención continua a la excelencia técnica",
+            "descripcion": "y al buen diseño mejora la agilidad.",
+            "aplicacion": "Code reviews, refactoring y buenas prácticas"
+          },
+          {
+            "numero": 10,
+            "principio": "La simplicidad",
+            "descripcion": "el arte de maximizar la cantidad de trabajo no realizado, es esencial.",
+            "aplicacion": "KISS principle y MVP"
+          },
+          {
+            "numero": 11,
+            "principio": "Las mejores arquitecturas, requisitos y diseños",
+            "descripcion": "emergen de equipos auto-organizados.",
+            "aplicacion": "Diseño emergente y arquitectura evolutiva"
+          },
+          {
+            "numero": 12,
+            "principio": "En intervalos regulares, el equipo reflexiona",
+            "descripcion": "sobre cómo ser más efectivos y ajusta su comportamiento en consecuencia.",
+            "aplicacion": "Retrospectivas y mejora continua"
+          }
+        ],
+        "resumen": "Los 12 principios del Manifiesto Ágil proporcionan una guía detallada para implementar prácticas ágiles efectivas, enfocándose en la entrega de valor, colaboración y mejora continua."
+      },
+      "evaluacion": {
+        "tipo": "scenario",
+        "instrucciones": "Analiza el siguiente escenario y selecciona los principios ágiles que se aplican",
+        "scenario": "Un equipo de desarrollo decide realizar retrospectivas cada dos semanas para identificar áreas de mejora y ajustar su proceso de trabajo.",
+        "principios_aplicables": [12, 8, 5],
+        "explicacion": "Este escenario aplica los principios 12 (reflexión y ajuste), 8 (desarrollo sostenible) y 5 (confiar en los individuos)."
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "1.5 Comparación: Ágil vs Tradicional",
+      "duracion": 20,
+      "puntos": 60,
+      "tipo": "interactivo",
+      "contenido": {
+        "video": {
+          "url": "videos/leccion1-5.mp4",
+          "duracion": "20:18",
+          "subtitulos": "es"
+        },
+        "comparacion": {
+          "waterfall": {
+            "nombre": "Modelo en Cascada (Waterfall)",
+            "caracteristicas": [
+              "Secuencial y rígido",
+              "Fases bien definidas",
+              "Documentación extensiva",
+              "Poca flexibilidad",
+              "Riesgos detectados tarde",
+              "Planificación detallada inicial"
+            ],
+            "ventajas": [
+              "Predecible y estructurado",
+              "Clara división de responsabilidades",
+              "Adecuado para proyectos simples",
+              "Fácil de gestionar"
+            ],
+            "desventajas": [
+              "Inflexible a cambios",
+              "Retrasa la entrega de valor",
+              "Alto riesgo de fracaso",
+              "Comunicación limitada"
+            ]
+          },
+          "agile": {
+            "nombre": "Enfoque Ágil",
+            "caracteristicas": [
+              "Iterativo e incremental",
+              "Flexible y adaptable",
+              "Colaboración continua",
+              "Entrega temprana de valor",
+              "Retroalimentación constante",
+              "Mejora continua"
+            ],
+            "ventajas": [
+              "Adaptable a cambios",
+              "Entrega temprana de valor",
+              "Mayor satisfacción del cliente",
+              "Reducción de riesgos"
+            ],
+            "desventajas": [
+              "Requiere disciplina",
+              "Puede ser impredecible",
+              "Necesita colaboración activa",
+              "Desafío de estimación"
+            ]
+          }
+        },
+        "tabla_comparativa": [
+          {
+            "aspecto": "Planificación",
+            "waterfall": "Exhaustiva al inicio",
+            "agile": "Continua y adaptativa"
+          },
+          {
+            "aspecto": "Requisitos",
+            "waterfall": "Fijos desde el inicio",
+            "agile": "Evolucionan durante el proyecto"
+          },
+          {
+            "aspecto": "Diseño",
+            "waterfall": "Completo antes de codificar",
+            "agile": "Emerge y evoluciona"
+          },
+          {
+            "aspecto": "Desarrollo",
+            "waterfall": "Secuencial",
+            "agile": "Iterativo e incremental"
+          },
+          {
+            "aspecto": "Testing",
+            "waterfall": "Al final del desarrollo",
+            "agile": "Continuo durante todo el proceso"
+          },
+          {
+            "aspecto": "Entrega",
+            "waterfall": "Al final del proyecto",
+            "agile": "Incremental y frecuente"
+          },
+          {
+            "aspecto": "Cliente",
+            "waterfall": "Involucrado al inicio y final",
+            "agile": "Colaboración continua"
+          }
+        ],
+        "resumen": "El enfoque ágil difiere fundamentalmente del modelo tradicional en su flexibilidad, adaptabilidad y enfoque en la colaboración y entrega continua de valor."
+      },
+      "evaluacion": {
+        "tipo": "matching",
+        "instrucciones": "Arrastra cada característica al modelo correspondiente (Waterfall o Ágil)",
+        "caracteristicas": [
+          {
+            "texto": "Planificación exhaustiva al inicio",
+            "modelo": "waterfall"
+          },
+          {
+            "texto": "Entrega frecuente de valor",
+            "modelo": "agile"
+          },
+          {
+            "texto": "Requisitos fijos",
+            "modelo": "waterfall"
+          },
+          {
+            "texto": "Colaboración continua con el cliente",
+            "modelo": "agile"
+          },
+          {
+            "texto": "Testing al final del proceso",
+            "modelo": "waterfall"
+          },
+          {
+            "texto": "Mejora continua",
+            "modelo": "agile"
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "titulo": "1.6 Beneficios y Desafíos",
+      "duracion": 15,
+      "puntos": 50,
+      "tipo": "video",
+      "contenido": {
+        "video": {
+          "url": "videos/leccion1-6.mp4",
+          "duracion": "15:42",
+          "subtitulos": "es"
+        },
+        "beneficios": [
+          {
+            "categoria": "Para el Cliente",
+            "items": [
+              "Mayor satisfacción con el producto final",
+              "Visibilidad temprana del progreso",
+              "Capacidad de ajustar requisitos",
+              "Entrega más rápida de valor"
+            ]
+          },
+          {
+            "categoria": "Para el Equipo",
+            "items": [
+              "Mayor motivación y compromiso",
+              "Auto-organización y empoderamiento",
+              "Mejor comunicación y colaboración",
+              "Desarrollo profesional continuo"
+            ]
+          },
+          {
+            "categoria": "Para la Organización",
+            "items": [
+              "Reducción del time-to-market",
+              "Mejor gestión de riesgos",
+              "Mayor ROI del proyecto",
+              "Adaptabilidad al mercado"
+            ]
+          },
+          {
+            "categoria": "Para el Producto",
+            "items": [
+              "Mayor calidad del software",
+              "Mejor alineación con necesidades reales",
+              "Reducción de características innecesarias",
+              "Evolución basada en feedback real"
+            ]
+          }
+        ],
+        "desafios": [
+          {
+            "categoria": "Culturales",
+            "items": [
+              "Resistencia al cambio",
+              "Mentalidad tradicional arraigada",
+              "Falta de confianza en equipos auto-organizados",
+              "Dificultad para ceder control"
+            ]
+          },
+          {
+            "categoria": "Organizacionales",
+            "items": [
+              "Falta de apoyo de la dirección",
+              "Estructuras jerárquicas rígidas",
+              "Procesos burocráticos",
+              "Presupuestos y contratos tradicionales"
+            ]
+          },
+          {
+            "categoria": "Técnicos",
+            "items": [
+              "Falta de habilidades técnicas",
+              "Dificultad de estimación",
+              "Refactorización constante",
+              "Integración continua compleja"
+            ]
+          },
+          {
+            "categoria": "De Implementación",
+            "items": [
+              "Entrenamiento insuficiente",
+              "Expectativas irreales",
+              "Implementación parcial",
+              "Falta de coaching adecuado"
+            ]
+          }
+        ],
+        "factores_exito": [
+          "Compromiso de la dirección",
+          "Entrenamiento y coaching",
+          "Paciencia y perseverancia",
+          "Mentalidad de mejora continua",
+          "Colaboración activa del cliente",
+          "Herramientas apropiadas",
+          "Cultura de confianza",
+          "Métricas y medición"
+        ],
+        "resumen": "Las metodologías ágiles ofrecen numerosos beneficios pero también presentan desafíos significativos. El éxito depende del compromiso organizacional, entrenamiento adecuado y una implementación gradual."
+      },
+      "evaluacion": {
+        "tipo": "quiz_final",
+        "preguntas": [
+          {
+            "pregunta": "¿Cuál es el beneficio más importante de las metodologías ágiles para el cliente?",
+            "opciones": [
+              "Documentación más detallada",
+              "Mayor capacidad de adaptación a cambios",
+              "Procesos más estrictos",
+              "Costos predecibles exactamente"
+            ],
+            "respuesta_correcta": 1,
+            "explicacion": "La capacidad de adaptarse a los cambios es uno de los beneficios más valorados por los clientes en el enfoque ágil."
+          },
+          {
+            "pregunta": "¿Cuál es el desafío más común al implementar metodologías ágiles?",
+            "opciones": [
+              "Falta de tecnología adecuada",
+              "Resistencia cultural al cambio",
+              "Costos de implementación",
+              "Falta de documentación"
+            ],
+            "respuesta_correcta": 1,
+            "explicacion": "La resistencia cultural al cambio es uno de los mayores obstáculos en la transición a metodologías ágiles."
+          }
+        ]
+      }
+    }
+  ],
+  "recursos_adicionales": {
+    "videos": [
+      {
+        "titulo": "Historia completa del Manifiesto Ágil",
+        "duracion": "12:30",
+        "url": "recursos/videos/historia-manifiesto.mp4",
+        "tipo": "suplementario"
+      },
+      {
+        "titulo": "Entrevista con uno de los autores del Manifiesto",
+        "duracion": "25:15",
+        "url": "recursos/videos/entrevista-autor.mp4",
+        "tipo": "experto"
+      }
+    ],
+    "lecturas": [
+      {
+        "titulo": "El Manifiesto Ágil - Versión completa",
+        "tipo": "pdf",
+        "url": "recursos/pdf/manifiesto-completo.pdf",
+        "paginas": 8
+      },
+      {
+        "titulo": "Casos de Éxito en Implementación Ágil",
+        "tipo": "pdf",
+        "url": "recursos/pdf/casos-exito.pdf",
+        "paginas": 25
+      }
+    ],
+    "podcasts": [
+      {
+        "titulo": "Podcast Ágil #1: Orígenes del movimiento",
+        "duracion": "35:20",
+        "url": "recursos/podcasts/agil-001.mp3",
+        "invitados": ["Experto en metodologías ágiles"]
+      }
+    ],
+    "herramientas": [
+      {
+        "nombre": "Trello",
+        "descripcion": "Herramienta básica de gestión de proyectos ágiles",
+        "tipo": "kanban",
+        "url": "https://trello.com"
+      },
+      {
+        "nombre": "Jira",
+        "descripcion": "Sistema completo para gestión ágil de proyectos",
+        "tipo": "scrum",
+        "url": "https://www.atlassian.com/software/jira"
+      }
+    ],
+    "ejercicios": [
+      {
+        "titulo": "Ejercicio Práctico: Identificar valores ágiles",
+        "tipo": "analisis",
+        "duracion": "20 minutos",
+        "instrucciones": "Analiza 3 proyectos reales y identifica qué valores ágiles se aplicaron"
+      },
+      {
+        "titulo": "Simulación: Planning Poker",
+        "tipo": "colaborativo",
+        "duracion": "30 minutos",
+        "instrucciones": "Participa en una sesión de estimación con tu equipo"
+      }
+    ]
+  },
+  "evaluacion_semanal": {
+    "tipo": "comprehensive",
+    "duracion": "45 minutos",
+    "preguntas_totales": 20,
+    "puntuacion_maxima": 200,
+    "umbral_aprobacion": 70,
+    "secciones": [
+      {
+        "nombre": "Conceptos Básicos",
+        "preguntas": 5,
+        "puntos": 50
+      },
+      {
+        "nombre": "Manifiesto Ágil",
+        "preguntas": 5,
+        "puntos": 50
+      },
+      {
+        "nombre": "Principios Ágiles",
+        "preguntas": 5,
+        "puntos": 50
+      },
+      {
+        "nombre": "Comparación y Aplicación",
+        "preguntas": 5,
+        "puntos": 50
+      }
+    ]
+  },
+  "proyecto_practico": {
+    "titulo": "Análisis de Caso: Transición a Ágil",
+    "descripcion": "Analiza una organización ficticia que desea transicionar de metodologías tradicionales a ágiles",
+    "entregables": [
+      "Diagnóstico de situación actual",
+      "Plan de transición",
+      "Identificación de riesgos",
+      "Métricas de éxito",
+      "Cronograma de implementación"
+    ],
+    "duracion_estimada": "2-3 horas",
+    "trabajo": "individual",
+    "puntos": 100,
+    "criterios_evaluacion": [
+      "Análisis crítico de la situación (20%)",
+      "Viabilidad del plan propuesto (25%)",
+      "Identificación completa de riesgos (20%)",
+      "Métricas apropiadas (15%)",
+      "Claridad y presentación (20%)"
+    ]
+  }
+}

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 1: Introducción a las Metodologías Ágiles</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="semana1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header de Navegación del Curso -->
+    <header class="course-header">
+        <nav class="course-nav">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="../../index.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Volver al Inicio</span>
+                    </a>
+                    <div class="course-info">
+                        <h3>Semana 1: Introducción a las Metodologías Ágiles</h3>
+                        <div class="course-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="weekProgress"></div>
+                            </div>
+                            <span class="progress-text">0% completado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <div class="user-menu">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Estudiante</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="course-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Sidebar de Navegación de Lecciones -->
+                <aside class="lesson-sidebar">
+                    <div class="sidebar-header">
+                        <h4><i class="fas fa-list"></i> Lecciones de la Semana</h4>
+                    </div>
+                    <nav class="lesson-nav">
+                        <ul class="lesson-list">
+                            <li class="lesson-item active" data-lesson="1">
+                                <div class="lesson-status">
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+                                <div class="lesson-info">
+                                    <h5>1.1 ¿Qué son las Metodologías Ágiles?</h5>
+                                    <span class="lesson-duration">15 min</span>
+                                </div>
+                            </li>
+                            <li class="lesson-item" data-lesson="2">
+                                <div class="lesson-status">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="lesson-info">
+                                    <h5>1.2 Historia y Orígenes</h5>
+                                    <span class="lesson-duration">20 min</span>
+                                </div>
+                            </li>
+                            <li class="lesson-item" data-lesson="3">
+                                <div class="lesson-status">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="lesson-info">
+                                    <h5>1.3 El Manifiesto Ágil</h5>
+                                    <span class="lesson-duration">25 min</span>
+                                </div>
+                            </li>
+                            <li class="lesson-item" data-lesson="4">
+                                <div class="lesson-status">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="lesson-info">
+                                    <h5>1.4 Principios Ágiles</h5>
+                                    <span class="lesson-duration">30 min</span>
+                                </div>
+                            </li>
+                            <li class="lesson-item" data-lesson="5">
+                                <div class="lesson-status">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="lesson-info">
+                                    <h5>1.5 Comparación: Ágil vs Tradicional</h5>
+                                    <span class="lesson-duration">20 min</span>
+                                </div>
+                            </li>
+                            <li class="lesson-item" data-lesson="6">
+                                <div class="lesson-status">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="lesson-info">
+                                    <h5>1.6 Beneficios y Desafíos</h5>
+                                    <span class="lesson-duration">15 min</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="week-resources">
+                        <h5><i class="fas fa-book"></i> Recursos de la Semana</h5>
+                        <ul class="resources-list">
+                            <li><a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Guía PDF - Manifiesto Ágil</a></li>
+                            <li><a href="#" class="resource-link"><i class="fas fa-video"></i> Video Extra - Casos de Éxito</a></li>
+                            <li><a href="#" class="resource-link"><i class="fas fa-podcast"></i> Podcast - Entrevista Expertos</a></li>
+                            <li><a href="#" class="resource-link"><i class="fas fa-code"></i> Ejercicios Prácticos</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Área de Contenido Principal -->
+                <section class="main-content">
+                    <!-- Lección 1: ¿Qué son las Metodologías Ágiles? -->
+                    <article class="lesson-content active" id="lesson-1">
+                        <header class="lesson-header">
+                            <h1>1.1 ¿Qué son las Metodologías Ágiles?</h1>
+                            <div class="lesson-meta">
+                                <span><i class="fas fa-clock"></i> 15 minutos</span>
+                                <span><i class="fas fa-signal"></i> Principiante</span>
+                                <span><i class="fas fa-star"></i> 50 puntos</span>
+                            </div>
+                        </header>
+
+                        <!-- Video Principal -->
+                        <div class="video-container">
+                            <div class="video-player">
+                                <div class="video-placeholder">
+                                    <img src="https://via.placeholder.com/800x450/4f46e5/ffffff?text=Video+Introducción" alt="Video de introducción">
+                                    <div class="video-overlay">
+                                        <button class="play-btn">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                        <span class="video-duration">15:23</span>
+                                    </div>
+                                </div>
+                                <div class="video-controls">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                    <div class="controls-row">
+                                        <button class="control-btn"><i class="fas fa-play"></i></button>
+                                        <button class="control-btn"><i class="fas fa-volume-up"></i></button>
+                                        <span class="time-display">0:00 / 15:23</span>
+                                        <button class="control-btn"><i class="fas fa-cog"></i></button>
+                                        <button class="control-btn"><i class="fas fa-expand"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contenido Teórico -->
+                        <div class="content-sections">
+                            <section class="content-section">
+                                <h2><i class="fas fa-lightbulb"></i> ¿Qué significa ser "Ágil"?</h2>
+                                <p>Las metodologías ágiles son un conjunto de prácticas y principios que permiten a los equipos desarrollar software de manera iterativa e incremental. En lugar de seguir un plan rígido, los equipos ágiles trabajan en ciclos cortos llamados "sprints" que permiten adaptarse rápidamente a los cambios.</p>
+
+                                <div class="concept-card">
+                                    <div class="concept-icon">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                    <div class="concept-text">
+                                        <h3>Velocidad y Adaptabilidad</h3>
+                                        <p>La agilidad permite a los equipos responder rápidamente a los cambios del mercado y las necesidades del cliente, entregando valor de forma continua.</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="content-section">
+                                <h2><i class="fas fa-history"></i> Contexto Histórico</h2>
+                                <p>Antes de 2001, la industria del software estaba dominada por metodologías tradicionales como el modelo en cascada (Waterfall), que resultaban rígidas y lentas para adaptarse a los cambios.</p>
+
+                                <div class="timeline-comparison">
+                                    <div class="timeline-item traditional">
+                                        <div class="timeline-header">
+                                            <i class="fas fa-water"></i>
+                                            <h3>Modelo Tradicional (Waterfall)</h3>
+                                        </div>
+                                        <ul class="timeline-points">
+                                            <li>Secuencial y rígido</li>
+                                            <li>Documentación extensa</li>
+                                            <li>Poca flexibilidad</li>
+                                            <li>Riesgos detectados tarde</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="timeline-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                        <span>Evolución</span>
+                                    </div>
+
+                                    <div class="timeline-item agile">
+                                        <div class="timeline-header">
+                                            <i class="fas fa-bolt"></i>
+                                            <h3>Enfoque Ágil</h3>
+                                        </div>
+                                        <ul class="timeline-points">
+                                            <li>Iterativo e incremental</li>
+                                            <li>Colaboración continua</li>
+                                            <li>Adaptabilidad al cambio</li>
+                                            <li>Entrega temprana de valor</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="content-section">
+                                <h2><i class="fas fa-users"></i> El Equipo Ágil</h2>
+                                <p>Un equipo ágil se caracteriza por:</p>
+
+                                <div class="team-characteristics">
+                                    <div class="characteristic-card">
+                                        <i class="fas fa-handshake"></i>
+                                        <h4>Colaboración</h4>
+                                        <p>Trabajo en equipo estrecho y comunicación constante</p>
+                                    </div>
+                                    <div class="characteristic-card">
+                                        <i class="fas fa-sync"></i>
+                                        <h4>Iteración</h4>
+                                        <p>Ciclos cortos de desarrollo y mejora continua</p>
+                                    </div>
+                                    <div class="characteristic-card">
+                                        <i class="fas fa-user-check"></i>
+                                        <h4>Auto-organización</h4>
+                                        <p>Equipos autónomos que toman decisiones propias</p>
+                                    </div>
+                                    <div class="characteristic-card">
+                                        <i class="fas fa-chart-line"></i>
+                                        <h4>Mejora Continua</h4>
+                                        <p>Retroalimentación constante y aprendizaje</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <!-- Elemento Interactivo -->
+                        <div class="interactive-element">
+                            <h3><i class="fas fa-gamepad"></i> ¡Pon a Prueba tu Conocimiento!</h3>
+                            <div class="quiz-container">
+                                <div class="quiz-question">
+                                    <p>¿Cuál es la característica principal que distingue a las metodologías ágiles de las tradicionales?</p>
+                                </div>
+                                <div class="quiz-options">
+                                    <button class="quiz-option" data-correct="false">
+                                        <span>A</span>
+                                        Documentación extensa y detallada
+                                    </button>
+                                    <button class="quiz-option" data-correct="true">
+                                        <span>B</span>
+                                        Adaptabilidad al cambio y entrega iterativa
+                                    </button>
+                                    <button class="quiz-option" data-correct="false">
+                                        <span>C</span>
+                                        Planificación rígida y secuencial
+                                    </button>
+                                    <button class="quiz-option" data-correct="false">
+                                        <span>D</span>
+                                        Enfoque únicamente en tecnología
+                                    </button>
+                                </div>
+                                <div class="quiz-feedback" style="display: none;">
+                                    <div class="feedback-icon"></div>
+                                    <p class="feedback-text"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Resumen y Próximos Pasos -->
+                        <div class="lesson-summary">
+                            <h3><i class="fas fa-clipboard-check"></i> Resumen de la Lección</h3>
+                            <div class="summary-points">
+                                <div class="summary-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Las metodologías ágiles permiten adaptarse rápidamente a los cambios</span>
+                                </div>
+                                <div class="summary-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Surgieron como respuesta a las limitaciones del modelo en cascada</span>
+                                </div>
+                                <div class="summary-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Promueven la colaboración y auto-organización del equipo</span>
+                                </div>
+                                <div class="summary-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Enfocadas en entregar valor de forma continua</span>
+                                </div>
+                            </div>
+
+                            <div class="next-lesson">
+                                <h4>🎯 Próxima Lección</h4>
+                                <p>En la siguiente lección exploraremos la historia y orígenes del movimiento ágil, desde sus inicios hasta el Manifiesto Ágil de 2001.</p>
+                                <button class="btn btn-primary" onclick="nextLesson()">
+                                    Siguiente Lección <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Otras lecciones (inicialmente ocultas) -->
+                    <article class="lesson-content" id="lesson-2" style="display: none;">
+                        <!-- Contenido lección 2 -->
+                    </article>
+
+                    <article class="lesson-content" id="lesson-3" style="display: none;">
+                        <!-- Contenido lección 3 -->
+                    </article>
+                </section>
+
+                <!-- Panel Derecho de Progreso y Notas -->
+                <aside class="progress-sidebar">
+                    <div class="progress-widget">
+                        <h4><i class="fas fa-trophy"></i> Tu Progreso</h4>
+                        <div class="progress-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Lecciones Completadas</span>
+                                <span class="stat-value">1/6</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Puntos Ganados</span>
+                                <span class="stat-value">50</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Tiempo Total</span>
+                                <span class="stat-value">15 min</span>
+                            </div>
+                        </div>
+
+                        <div class="achievements">
+                            <h5>Logros Desbloqueados</h5>
+                            <div class="achievement-list">
+                                <div class="achievement unlocked">
+                                    <i class="fas fa-medal"></i>
+                                    <span>Primer Paso</span>
+                                </div>
+                                <div class="achievement locked">
+                                    <i class="fas fa-lock"></i>
+                                    <span>Explorador Ágil</span>
+                                </div>
+                                <div class="achievement locked">
+                                    <i class="fas fa-lock"></i>
+                                    <span>Maestro de la Semana</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="notes-widget">
+                        <h4><i class="fas fa-sticky-note"></i> Mis Notas</h4>
+                        <div class="notes-area">
+                            <textarea placeholder="Toma notas aquí mientras aprendes..." id="notesArea"></textarea>
+                            <button class="btn btn-small btn-primary" onclick="saveNotes()">
+                                <i class="fas fa-save"></i> Guardar Notas
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="help-widget">
+                        <h4><i class="fas fa-question-circle"></i> ¿Necesitas Ayuda?</h4>
+                        <div class="help-options">
+                            <button class="help-btn">
+                                <i class="fas fa-comments"></i>
+                                Chat con Tutor
+                            </button>
+                            <button class="help-btn">
+                                <i class="fas fa-book"></i>
+                                Recursos Adicionales
+                            </button>
+                            <button class="help-btn">
+                                <i class="fas fa-users"></i>
+                                Foro de Discusión
+                            </button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer del Curso -->
+    <footer class="course-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5>Navegación Rápida</h5>
+                    <ul>
+                        <li><a href="#lesson-1">Lección Actual</a></li>
+                        <li><a href="#">Próxima Lección</a></li>
+                        <li><a href="#">Quiz Semanal</a></li>
+                        <li><a href="#">Proyecto Práctico</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Comunidad</h5>
+                    <ul>
+                        <li><a href="#">Foro de Estudiantes</a></li>
+                        <li><a href="#">Sesiones en Vivo</a></li>
+                        <li><a href="#">Study Groups</a></li>
+                        <li><a href="#">Mentoría</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Soporte</h5>
+                    <ul>
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">Contactar Soporte</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Tutoriales</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="semana1.js"></script>
+</body>
+</html>

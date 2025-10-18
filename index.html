@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodología Ágil - Curso Interactivo Multimedia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <i class="fas fa-rocket"></i>
+                    <span>ÁgilPro</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#curso">Curso</a></li>
+                    <li><a href="#temario">Temario</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Domina las Metodologías Ágiles</h1>
+                    <p class="hero-subtitle">Curso interactivo multimedia de 14 semanas para transformar tu forma de trabajar en equipo</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">14</span>
+                            <span class="stat-label">Semanas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Práctico</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Certificaciones</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('curso')">
+                            <i class="fas fa-play"></i> Comenzar Ahora
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('temario')">
+                            <i class="fas fa-book"></i> Ver Temario
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="animated-card">
+                        <div class="card-header">
+                            <div class="card-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="card-title">Sprint Planning</div>
+                        </div>
+                        <div class="card-content">
+                            <div class="task-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>User Story: Login mejorado</span>
+                            </div>
+                            <div class="task-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>API: Integración pagos</span>
+                            </div>
+                            <div class="task-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Tests automatizados</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Overview -->
+    <section id="curso" class="course-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Curso de Metodologías Ágiles</h2>
+                <p>Transforma tu carrera profesional con nuestro curso completo</p>
+            </div>
+
+            <div class="course-grid">
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Trabajo en Equipo</h3>
+                    <p>Aprende a colaborar efectivamente en equipos multidisciplinarios usando metodologías ágiles</p>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Proyectos Reales</h3>
+                    <p>Trabaja en proyectos simulados que reflejan desafíos del mundo real</p>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certificación</h3>
+                    <p>Obtén certificaciones reconocidas en Scrum, Kanban y otras metodologías ágiles</p>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Herramientas Digitales</h3>
+                    <p>Domina las herramientas digitales esenciales para gestión ágil de proyectos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Syllabus -->
+    <section id="temario" class="syllabus">
+        <div class="container">
+            <div class="section-header">
+                <h2>Temario del Curso</h2>
+                <p>14 semanas estructuradas para tu éxito</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <span>1</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Semana 1: Introducción a las Metodologías Ágiles</h3>
+                        <p>Historia, principios y valores del Manifiesto Ágil</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <span>2-3</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Semanas 2-3: Scrum Framework</h3>
+                        <p>Roles, eventos, artefactos y ceremonias de Scrum</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <span>4-5</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Semanas 4-5: User Stories y Product Backlog</h3>
+                        <p>Creación, estimación y priorización de historias de usuario</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <span>6-7</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Semanas 6-7: Planificación de Sprints</h3>
+                        <p>Técnicas de planificación y compromiso del equipo</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <span>8-9</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Semanas 8-9: Kanban y Flujo Continuo</h3>
+                        <p>Principios de Kanban, WIP limits y métricas de flujo</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <span>10-11</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Semanas 10-11: Métricas Ágiles</h3>
+                        <p>Velocity, burndown charts, cumulative flow y KPIs</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <span>12-13</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Semanas 12-13: Escalado y Organizaciones Ágiles</h3>
+                        <p>SAFe, LeSS, Nexus y transformación organizacional</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <span>14</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Semana 14: Proyecto Final y Certificación</h3>
+                        <p>Proyecto integrador y preparación para certificación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Beneficios del Curso</h2>
+                <p>¿Por qué elegir nuestro programa?</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-video"></i>
+                    <h4>Contenido Multimedia</h4>
+                    <p>Videos interactivos, simulaciones y ejercicios prácticos</p>
+                </div>
+
+                <div class="benefit-item">
+                    <i class="fas fa-user-tie"></i>
+                    <h4>Expertos de la Industria</h4>
+                    <p>Aprende de profesionales con años de experiencia</p>
+                </div>
+
+                <div class="benefit-item">
+                    <i class="fas fa-comments"></i>
+                    <h4>Comunidad Activa</h4>
+                    <p>Acceso a foros y sesiones de mentoría en vivo</p>
+                </div>
+
+                <div class="benefit-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Aprendizaje Flexible</h4>
+                    <p>Accede al contenido desde cualquier dispositivo</p>
+                </div>
+
+                <div class="benefit-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <h4>Proyectos Reales</h4>
+                    <p>Construye tu portafolio con proyectos prácticos</p>
+                </div>
+
+                <div class="benefit-item">
+                    <i class="fas fa-award"></i>
+                    <h4>Certificación Incluida</h4>
+                    <p>Recibe certificado de completion al finalizar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para Transformar tu Carrera?</h2>
+                <p>Únete a miles de profesionales que ya dominan las metodologías ágiles</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large">
+                        <i class="fas fa-rocket"></i> Iniciar Curso Ahora
+                    </button>
+                    <button class="btn btn-outline btn-large">
+                        <i class="fas fa-calendar"></i> Agenda una Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ÁgilPro</h4>
+                    <p>Transformando profesionales en expertos ágiles desde 2024</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#curso">Curso</a></li>
+                        <li><a href="#temario">Temario</a></li>
+                        <li><a href="#beneficios">Beneficios</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">Comunidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@agilpro.com</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Ciudad, País</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 ÁgilPro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
