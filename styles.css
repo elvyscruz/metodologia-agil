@@ -315,6 +315,11 @@ body {
     font-size: 1.1rem;
 }
 
+.btn-small {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
 /* Secciones Comunes */
 section {
     padding: 5rem 0;

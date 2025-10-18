@@ -28,6 +28,44 @@ function scrollToSection(sectionId) {
     }
 }
 
+// Sistema de Notificaciones
+function showNotification(message, type = 'info') {
+    const notification = document.createElement('div');
+    notification.className = `notification notification-${type}`;
+    notification.style.cssText = `
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        background: ${type === 'success' ? '#10b981' : type === 'warning' ? '#f59e0b' : type === 'error' ? '#ef4444' : 'var(--primary-color)'};
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+        box-shadow: var(--shadow-lg);
+        z-index: 1000;
+        max-width: 300px;
+        animation: slideInRight 0.3s ease;
+    `;
+
+    notification.textContent = message;
+    document.body.appendChild(notification);
+
+    setTimeout(() => {
+        notification.style.animation = 'slideOutRight 0.3s ease';
+        setTimeout(() => notification.remove(), 300);
+    }, 3000);
+}
+
+// Navegación a la Semana 1
+function goToWeek1() {
+    // Mostrar notificación de carga
+    showNotification('🚀 Cargando contenido de la Semana 1...', 'info');
+
+    // Redirigir a la página de la Semana 1
+    setTimeout(() => {
+        window.location.href = 'semanas/semana1/index.html';
+    }, 500);
+}
+
 // Animación al hacer scroll
 const observerOptions = {
     threshold: 0.1,
@@ -393,6 +431,16 @@ modalStyle.textContent = `
             transform: translateY(0);
             opacity: 1;
         }
+    }
+
+    @keyframes slideInRight {
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slideOutRight {
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(100%); opacity: 0; }
     }
 `;
 document.head.appendChild(modalStyle);
