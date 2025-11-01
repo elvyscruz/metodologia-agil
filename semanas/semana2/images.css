@@ -1,0 +1,672 @@
+/* Estilos para placeholders de video usando SVG - Semana 2: Scrum */
+
+.video-placeholder {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    background: linear-gradient(135deg, var(--scrum-green), var(--scrum-blue));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.video-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3Cpattern id='scrum-pattern' width='20' height='20' patternUnits='userSpaceOnUse'%3E%3Ccircle cx='10' cy='10' r='2' fill='rgba(255,255,255,0.1)'/%3E%3Cpath d='M0,10 L20,10 M10,0 L10,20' stroke='rgba(255,255,255,0.05)' stroke-width='0.5'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23scrum-pattern)'/%3E%3C/svg%3E");
+    opacity: 0.3;
+}
+
+/* Gradientes temáticos específicos para cada lección de Scrum */
+.video-placeholder.lesson-1 {
+    background: linear-gradient(135deg, var(--scrum-green), #2E7D32);
+}
+
+.video-placeholder.lesson-2 {
+    background: linear-gradient(135deg, var(--scrum-blue), #1565C0);
+}
+
+.video-placeholder.lesson-3 {
+    background: linear-gradient(135deg, var(--scrum-orange), #E65100);
+}
+
+.video-placeholder.lesson-4 {
+    background: linear-gradient(135deg, var(--scrum-purple), #6A1B9A);
+}
+
+.video-placeholder.lesson-5 {
+    background: linear-gradient(135deg, var(--scrum-red), #C62828);
+}
+
+.video-placeholder.lesson-6 {
+    background: linear-gradient(135deg, var(--scrum-yellow), #F57C00);
+}
+
+.video-placeholder .video-text {
+    position: relative;
+    z-index: 1;
+}
+
+.video-placeholder .video-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Iconos específicos para cada tipo de contenido Scrum */
+.video-placeholder.lesson-1::after {
+    content: "🏗️";
+    position: absolute;
+    font-size: 4rem;
+    opacity: 0.3;
+    top: 20%;
+    right: 10%;
+}
+
+.video-placeholder.lesson-2::after {
+    content: "👥";
+    position: absolute;
+    font-size: 4rem;
+    opacity: 0.3;
+    top: 20%;
+    right: 10%;
+}
+
+.video-placeholder.lesson-3::after {
+    content: "📅";
+    position: absolute;
+    font-size: 4rem;
+    opacity: 0.3;
+    top: 20%;
+    right: 10%;
+}
+
+.video-placeholder.lesson-4::after {
+    content: "📋";
+    position: absolute;
+    font-size: 4rem;
+    opacity: 0.3;
+    top: 20%;
+    right: 10%;
+}
+
+.video-placeholder.lesson-5::after {
+    content: "🛠️";
+    position: absolute;
+    font-size: 4rem;
+    opacity: 0.3;
+    top: 20%;
+    right: 10%;
+}
+
+.video-placeholder.lesson-6::after {
+    content: "📊";
+    position: absolute;
+    font-size: 4rem;
+    opacity: 0.3;
+    top: 20%;
+    right: 10%;
+}
+
+/* Estilos para imágenes adicionales del curso Scrum */
+.scrum-image-placeholder {
+    background: linear-gradient(135deg, var(--scrum-green), var(--scrum-blue));
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.scrum-image-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3Cpattern id='scrum-backlog' width='40' height='40' patternUnits='userSpaceOnUse'%3E%3Crect width='35' height='35' x='2.5' y='2.5' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='2' rx='5'/%3E%3Ccircle cx='20' cy='20' r='3' fill='rgba(255,255,255,0.2)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='200' height='200' fill='url(%23scrum-backlog)'/%3E%3C/svg%3E");
+    opacity: 0.2;
+}
+
+.sprint-backlog-visual {
+    background: linear-gradient(135deg, var(--scrum-blue), var(--scrum-purple));
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.sprint-backlog-visual::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3Cpattern id='sprint-pattern' width='25' height='25' patternUnits='userSpaceOnUse'%3E%3Crect width='20' height='20' x='2.5' y='2.5' fill='none' stroke='rgba(255,255,255,0.15)' stroke-width='1' rx='3'/%3E%3Cline x1='5' y1='12.5' x2='20' y2='12.5' stroke='rgba(255,255,255,0.1)' stroke-width='1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23sprint-pattern)'/%3E%3C/svg%3E");
+    opacity: 0.3;
+}
+
+.sprint-ceremony-visual {
+    background: linear-gradient(135deg, var(--scrum-orange), var(--scrum-yellow));
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.sprint-ceremony-visual::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3Cpattern id='ceremony-pattern' width='50' height='50' patternUnits='userSpaceOnUse'%3E%3Ccircle cx='25' cy='25' r='15' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='2'/%3E%3Ccircle cx='25' cy='25' r='8' fill='rgba(255,255,255,0.05)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23ceremony-pattern)'/%3E%3C/svg%3E");
+    opacity: 0.3;
+}
+
+.image-text {
+    z-index: 1;
+    position: relative;
+}
+
+.image-text i {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.image-text div {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Estilos para visualización de roles Scrum */
+.role-visual {
+    background: var(--bg-light);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: var(--transition-smooth);
+}
+
+.role-visual:hover {
+    border-color: var(--scrum-blue);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.role-visual.po {
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(33, 150, 243, 0.1));
+    border-color: var(--scrum-green);
+}
+
+.role-visual.sm {
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.1), rgba(156, 39, 176, 0.1));
+    border-color: var(--scrum-blue);
+}
+
+.role-visual.dev {
+    background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(244, 67, 54, 0.1));
+    border-color: var(--scrum-orange);
+}
+
+.role-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.role-visual.po .role-icon {
+    color: var(--scrum-green);
+}
+
+.role-visual.sm .role-icon {
+    color: var(--scrum-blue);
+}
+
+.role-visual.dev .role-icon {
+    color: var(--scrum-orange);
+}
+
+/* Estilos para visualización de eventos Scrum */
+.event-timeline {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.event-timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--scrum-gradient);
+}
+
+.timeline-event {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 4px solid var(--scrum-green);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-event-content {
+    margin-left: 60px;
+    padding: 1.5rem;
+    background: var(--bg-light);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--scrum-blue);
+    flex: 1;
+}
+
+/* Estilos para visualización de artefactos Scrum */
+.artifact-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.artifact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--scrum-gradient);
+}
+
+.artifact-card.product-backlog::before {
+    background: linear-gradient(180deg, var(--scrum-green), var(--scrum-blue));
+}
+
+.artifact-card.sprint-backlog::before {
+    background: linear-gradient(180deg, var(--scrum-blue), var(--scrum-purple));
+}
+
+.artifact-card.increment::before {
+    background: linear-gradient(180deg, var(--scrum-orange), var(--scrum-red));
+}
+
+.artifact-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    opacity: 0.3;
+}
+
+.artifact-card.product-backlog .artifact-icon {
+    color: var(--scrum-green);
+}
+
+.artifact-card.sprint-backlog .artifact-icon {
+    color: var(--scrum-blue);
+}
+
+.artifact-card.increment .artifact-icon {
+    color: var(--scrum-orange);
+}
+
+/* Estilos para visualización de métricas Scrum */
+.metric-chart {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.metric-visualization {
+    height: 200px;
+    background: var(--bg-light);
+    border-radius: 8px;
+    margin: 1rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.metric-visualization::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Cdefs%3E%3Cpattern id='chart-grid' width='40' height='40' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 40 0 L 0 0 0 40' fill='none' stroke='rgba(0,0,0,0.05)' stroke-width='1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='400' height='200' fill='url(%23chart-grid)'/%3E%3C/svg%3E");
+}
+
+.velocity-chart {
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(33, 150, 243, 0.1));
+}
+
+.burndown-chart {
+    background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(244, 67, 54, 0.1));
+}
+
+.cumulative-flow-chart {
+    background: linear-gradient(135deg, rgba(156, 39, 176, 0.1), rgba(63, 81, 181, 0.1));
+}
+
+/* Estilos para visualización de herramientas Scrum */
+.tools-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.tool-showcase-item {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: var(--transition-smooth);
+    border: 2px solid transparent;
+}
+
+.tool-showcase-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--scrum-blue);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.tool-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.tool-showcase-item.story-mapping .tool-icon {
+    color: var(--scrum-green);
+}
+
+.tool-showcase-item.planning-poker .tool-icon {
+    color: var(--scrum-blue);
+}
+
+.tool-showcase-item.burndown .tool-icon {
+    color: var(--scrum-orange);
+}
+
+.tool-showcase-item.kanban .tool-icon {
+    color: var(--scrum-purple);
+}
+
+/* Estilos para evaluación de Scrum readiness */
+.scrum-readiness-result {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    margin-top: 1.5rem;
+    border: 2px solid var(--scrum-green);
+}
+
+.scrum-readiness-result h4 {
+    color: var(--scrum-green);
+    margin: 0 0 1.5rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.scrum-score-display {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.scrum-score-circle {
+    background: var(--scrum-gradient);
+    color: white;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(76, 175, 80, 0.3);
+    position: relative;
+}
+
+.scrum-score-circle::before {
+    content: '📋';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 2rem;
+    opacity: 0.7;
+}
+
+.scrum-score-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.scrum-score-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+
+.scrum-competency-breakdown {
+    margin-bottom: 2rem;
+}
+
+.scrum-competency-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: var(--bg-light);
+    border-radius: 8px;
+    border-left: 4px solid var(--scrum-blue);
+}
+
+.scrum-competency-name {
+    font-weight: 600;
+    color: var(--text-dark);
+    flex: 1;
+}
+
+.scrum-competency-score {
+    font-weight: 700;
+    color: var(--scrum-blue);
+    margin-left: 1rem;
+}
+
+.scrum-competency-bar {
+    width: 120px;
+    height: 10px;
+    background: var(--bg-light);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.scrum-competency-fill {
+    height: 100%;
+    background: var(--scrum-gradient);
+    border-radius: 5px;
+    transition: width 0.8s ease;
+}
+
+.scrum-recommendation {
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(33, 150, 243, 0.1));
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--scrum-green);
+    position: relative;
+}
+
+.scrum-recommendation::before {
+    content: '💡';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+}
+
+.scrum-recommendation h5 {
+    color: var(--scrum-green);
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.scrum-recommendation p {
+    color: var(--text-dark);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.scrum-recommendation ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.scrum-recommendation li {
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+/* Estilos responsive para imágenes */
+@media (max-width: 768px) {
+    .video-placeholder {
+        padding-bottom: 56.25%;
+        font-size: 1.5rem;
+    }
+
+    .video-placeholder .video-icon {
+        font-size: 2rem;
+    }
+
+    .video-placeholder::after {
+        font-size: 3rem;
+        top: 10%;
+        right: 5%;
+    }
+
+    .tools-showcase {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .event-timeline::before {
+        left: 15px;
+    }
+
+    .timeline-event::before {
+        left: 8px;
+        width: 15px;
+        height: 15px;
+        border-width: 3px;
+    }
+
+    .timeline-event-content {
+        margin-left: 35px;
+        padding: 1rem;
+    }
+
+    .scrum-score-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .scrum-score-number {
+        font-size: 2rem;
+    }
+
+    .scrum-competency-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .scrum-competency-score {
+        margin-left: 0;
+    }
+
+    .scrum-competency-bar {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-placeholder {
+        font-size: 1.2rem;
+    }
+
+    .video-placeholder::after {
+        font-size: 2.5rem;
+    }
+
+    .scrum-readiness-result {
+        padding: 1.5rem;
+    }
+
+    .scrum-score-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .scrum-score-number {
+        font-size: 1.8rem;
+    }
+
+    .scrum-score-label {
+        font-size: 0.8rem;
+    }
+
+    .scrum-recommendation {
+        padding: 1rem;
+    }
+
+    .scrum-recommendation::before {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 2: Scrum: Framework Ágil por Excelencia</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="semana2.css">
+    <link rel="stylesheet" href="images.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header de Navegación del Curso -->
+    <header class="course-header">
+        <nav class="course-nav">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="../../index.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Volver al Inicio</span>
+                    </a>
+                    <div class="course-info">
+                        <h3>Semana 2: Scrum: Framework Ágil por Excelencia</h3>
+                        <div class="course-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="weekProgress"></div>
+                            </div>
+                            <span class="progress-text">0% completado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <div class="user-menu">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Estudiante</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="course-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Sidebar de Navegación de Lecciones -->
+                <aside class="lesson-sidebar">
+                    <div class="sidebar-header">
+                        <h4><i class="fas fa-list"></i> Lecciones de la Semana</h4>
+                    </div>
+                    <nav class="lesson-nav">
+                        <ul class="lesson-list">
+                            <li class="lesson-item active" data-lesson="1">
+                                <div class="lesson-status">
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+                                <div class="lesson-info">
+                                    <h5>2.1 Introducción a Scrum</h5>
+                                    <span class="lesson-duration">18 min</span>
+                                </div>
+                            </li>
+                            <li class="lesson-item" data-lesson="2">
+                                <div class="lesson-status">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="lesson-info">
+                                    <h5>2.2 Roles en Scrum</h5>
+                                    <span class="lesson-duration">22 min</span>
+                                </div>
+                            </li>
+                            <li class="lesson-item" data-lesson="3">
+                                <div class="lesson-status">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="lesson-info">
+                                    <h5>2.3 Eventos Scrum</h5>
+                                    <span class="lesson-duration">25 min</span>
+                                </div>
+                            </li>
+                            <li class="lesson-item" data-lesson="4">
+                                <div class="lesson-status">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="lesson-info">
+                                    <h5>2.4 Artefactos Scrum</h5>
+                                    <span class="lesson-duration">20 min</span>
+                                </div>
+                            </li>
+                            <li class="lesson-item" data-lesson="5">
+                                <div class="lesson-status">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="lesson-info">
+                                    <h5>2.5 Herramientas y Técnicas Scrum</h5>
+                                    <span class="lesson-duration">18 min</span>
+                                </div>
+                            </li>
+                            <li class="lesson-item" data-lesson="6">
+                                <div class="lesson-status">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="lesson-info">
+                                    <h5>2.6 Métricas y KPIs en Scrum</h5>
+                                    <span class="lesson-duration">15 min</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Resumen del Progreso -->
+                    <div class="progress-summary">
+                        <h5><i class="fas fa-chart-line"></i> Tu Progreso</h5>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-value" id="completedLessons">0</span>
+                                <span class="stat-label">Lecciones</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value" id="totalPoints">0</span>
+                                <span class="stat-label">Puntos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value" id="timeSpent">0m</span>
+                                <span class="stat-label">Tiempo</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Contenido Principal de Lecciones -->
+                <section class="lesson-content" id="lessonContent">
+                    <!-- El contenido de las lecciones se cargará dinámicamente aquí -->
+                    <div class="lesson-loading">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Cargando contenido...</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal de Evaluación -->
+    <div id="evaluationModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Evaluación de Lección</h3>
+                <button class="close-modal" onclick="closeEvaluationModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="evaluationContent">
+                <!-- El contenido de la evaluación se cargará dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Recursos Adicionales -->
+    <div id="resourcesModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Recursos Adicionales</h3>
+                <button class="close-modal" onclick="closeResourcesModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="resourcesContent">
+                <!-- El contenido de recursos se cargará dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="semana2.js"></script>
+</body>
+</html>

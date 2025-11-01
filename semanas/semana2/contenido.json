@@ -1,0 +1,792 @@
+{
+  "semana": 2,
+  "titulo": "Scrum: Framework Ágil por Excelencia",
+  "descripcion": "Profundización en el framework Scrum, sus roles, eventos, artefactos y herramientas de implementación",
+  "objetivos": [
+    "Comprender la estructura y componentes de Scrum",
+    "Identificar los roles y responsabilidades en Scrum",
+    "Dominar los eventos y ceremonias Scrum",
+    "Conocer los artefactos y su propósito",
+    "Aplicar herramientas y técnicas Scrum prácticas"
+  ],
+  "lecciones": [
+    {
+      "id": 1,
+      "titulo": "2.1 Introducción a Scrum",
+      "duracion": 18,
+      "puntos": 55,
+      "tipo": "video",
+      "contenido": {
+        "video": {
+          "url": "videos/leccion2-1.mp4",
+          "duracion": "18:15",
+          "subtitulos": "es"
+        },
+        "conceptos_clave": [
+          "Definición de Scrum como framework",
+          "Empirismo en Scrum: transparencia, inspección, adaptación",
+          "Scrum vs otros frameworks ágiles",
+          "Pilares del empirismo Scrum"
+        ],
+        "resumen": "Scrum es un framework ligero que ayuda a las personas, equipos y organizaciones a generar valor a través de soluciones adaptativas para problemas complejos, basado en el empirismo con tres pilares fundamentales.",
+        "lecturas": [
+          {
+            "titulo": "Scrum Guide 2024 - Oficial",
+            "tipo": "pdf",
+            "url": "recursos/scrum-guide-2024.pdf",
+            "paginas": 14
+          }
+        ]
+      },
+      "evaluacion": {
+        "tipo": "quiz",
+        "preguntas": [
+          {
+            "pregunta": "¿Cuál es el pilar del empirismo Scrum que asegura que todos los aspectos del trabajo sean visibles para quienes son responsables del resultado?",
+            "opciones": [
+              "Inspección",
+              "Transparencia",
+              "Adaptación",
+              "Colaboración"
+            ],
+            "respuesta_correcta": 1,
+            "explicacion": "La transparencia es el primer pilar del empirismo Scrum, asegurando que todos los aspectos importantes del trabajo sean visibles."
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "2.2 Roles en Scrum",
+      "duracion": 22,
+      "puntos": 70,
+      "tipo": "interactivo",
+      "contenido": {
+        "video": {
+          "url": "videos/leccion2-2.mp4",
+          "duracion": "22:30",
+          "subtitulos": "es"
+        },
+        "roles": [
+          {
+            "nombre": "Product Owner",
+            "responsabilidades": [
+              "Maximizar el valor del producto",
+              "Gestionar y priorizar el Product Backlog",
+              "Asegurar la claridad de los ítems del backlog",
+              "Aceptar o rechazar trabajo completado"
+            ],
+            "caracteristicas": [
+              "Visión estratégica del producto",
+              "Conocimiento del mercado y usuarios",
+              "Capacidad de toma de decisiones",
+              "Disponibilidad para el equipo"
+            ],
+            "anti_patrones": [
+              "Micromanagement del equipo",
+              "Cambiar prioridades constantemente",
+              "No estar disponible para consultas",
+              "Aceptación de trabajo sin revisión"
+            ]
+          },
+          {
+            "nombre": "Scrum Master",
+            "responsabilidades": [
+              "Facilitar eventos Scrum",
+              "Eliminar impedimentos del equipo",
+              "Coach del equipo en Scrum",
+              "Proteger al equipo de interferencias externas"
+            ],
+            "caracteristicas": [
+              "Facilitador y servidor-líder",
+              "Conocimiento profundo de Scrum",
+              "Habilidades de coaching",
+              "Capacidad de resolución de conflictos"
+            ],
+            "anti_patrones": [
+              "Actuar como jefe del equipo",
+              "Tomar decisiones por el equipo",
+              "Ignorar impedimentos",
+              "Convertirse en secretario del proyecto"
+            ]
+          },
+          {
+            "nombre": "Developers (Equipo de Desarrollo)",
+            "responsabilidades": [
+              "Crear incrementos de producto potencialmente entregables",
+              "Auto-organización del trabajo",
+              "Mejora continua de procesos",
+              "Calidad técnica del producto"
+            ],
+            "caracteristicas": [
+              "Equipo multifuncional y cruzado",
+              "Sin títulos ni sub-roles",
+              "Responsabilidad colectiva",
+              "Tamaño óptimo de 3-9 personas"
+            ],
+            "anti_patrones": [
+              "Dependencia de individuos específicos",
+              "Silos funcionales",
+              "Falta de responsabilidad colectiva",
+              "Resistencia a la auto-organización"
+            ]
+          }
+        ],
+        "resumen": "Scrum define tres roles accountables: Product Owner (maximizar valor), Scrum Master (facilitar y coach), y Developers (crear el producto), cada uno con responsabilidades claras y específicas."
+      },
+      "evaluacion": {
+        "tipo": "drag_drop",
+        "instrucciones": "Arrastra cada responsabilidad al rol correspondiente",
+        "items": [
+          {
+            "item": "Maximizar el valor del producto",
+            "match": "Product Owner"
+          },
+          {
+            "item": "Eliminar impedimentos del equipo",
+            "match": "Scrum Master"
+          },
+          {
+            "item": "Crear incrementos entregables",
+            "match": "Developers"
+          },
+          {
+            "item": "Gestionar el Product Backlog",
+            "match": "Product Owner"
+          },
+          {
+            "item": "Facilitar eventos Scrum",
+            "match": "Scrum Master"
+          },
+          {
+            "item": "Auto-organización del trabajo",
+            "match": "Developers"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "2.3 Eventos Scrum",
+      "duracion": 25,
+      "puntos": 85,
+      "tipo": "video",
+      "contenido": {
+        "video": {
+          "url": "videos/leccion2-3.mp4",
+          "duracion": "25:45",
+          "subtitulos": "es"
+        },
+        "eventos": [
+          {
+            "nombre": "Sprint",
+            "duracion": "1-4 semanas",
+            "proposito": "Contenedor para todos los demás eventos",
+            "caracteristicas": [
+              "Duración fija sin cambios",
+              "Cada Sprint crea un incremento usable",
+              "Nuevo Sprint comienza inmediatamente después",
+              "No se pueden modificar durante el Sprint"
+            ],
+            "participantes": "Todo el equipo Scrum"
+          },
+          {
+            "nombre": "Sprint Planning",
+            "duracion": "Máximo 8 horas para Sprint de 4 semanas",
+            "proposito": "Planificar el trabajo a realizar en el Sprint",
+            "actividades": [
+              "Seleccionar ítems del Product Backlog",
+              "Definir el Sprint Goal",
+              "Planificar cómo entregar el incremento",
+              "Identificar dependencias y riesgos"
+            ],
+            "resultados": [
+              "Sprint Goal claro",
+              "Sprint Backlog inicial",
+              "Plan de trabajo del equipo"
+            ]
+          },
+          {
+            "nombre": "Daily Scrum",
+            "duracion": "15 minutos máximo",
+            "proposito": "Inspección del progreso hacia el Sprint Goal",
+            "frecuencia": "Diario, misma hora y lugar",
+            "formato": [
+              "¿Qué hice ayer para ayudar al Sprint Goal?",
+              "¿Qué haré hoy para ayudar al Sprint Goal?",
+              "¿Veo algún impedimento u obstáculo?"
+            ],
+            "participantes": "Developers (otros pueden observar)"
+          },
+          {
+            "nombre": "Sprint Review",
+            "duracion": "Máximo 4 horas para Sprint de 4 semanas",
+            "proposito": "Inspeccionar el incremento y adaptar el Product Backlog",
+            "actividades": [
+              "Demostración del trabajo completado",
+              "Feedback del Product Owner",
+              "Colaboración con stakeholders",
+              "Actualización del Product Backlog"
+            ],
+            "ambiente": "Celebración informal del progreso"
+          },
+          {
+            "nombre": "Sprint Retrospective",
+            "duracion": "Máximo 3 horas para Sprint de 4 semanas",
+            "proposito": "Planificar mejoras para el siguiente Sprint",
+            "actividades": [
+              "Reflexión sobre el Sprint pasado",
+              "Identificación de mejoras",
+              "Creación de plan de acción",
+              "Celebración de éxitos"
+            ],
+            "participantes": "Todo el equipo Scrum (stakeholders opcionales)"
+          }
+        ],
+        "resumen": "Scrum define cinco eventos que proveen regularidad y un ritmo óptimo para el equipo: Sprint, Sprint Planning, Daily Scrum, Sprint Review y Sprint Retrospective."
+      },
+      "evaluacion": {
+        "tipo": "scenario",
+        "instrucciones": "Analiza el siguiente escenario y selecciona qué eventos Scrum se aplican y cómo",
+        "scenario": "Un equipo está comenzando un nuevo Sprint de 2 semanas. Se reúnen el lunes por la mañana para definir qué trabajo harán y cómo lo abordarán. Durante el Sprint, se encuentran diariamente por 15 minutos. Al final del Sprint, presentan el trabajo completado a los stakeholders y luego se reúnen internamente para reflexionar sobre su proceso.",
+        "eventos_aplicados": [
+          {
+            "evento": "Sprint Planning",
+            "descripcion": "La reunión del lunes para planificar el trabajo"
+          },
+          {
+            "evento": "Daily Scrum",
+            "descripcion": "Las reuniones diarias de 15 minutos"
+          },
+          {
+            "evento": "Sprint Review",
+            "descripcion": "Presentación del trabajo a stakeholders"
+          },
+          {
+            "evento": "Sprint Retrospective",
+            "descripcion": "Reflexión interna del equipo"
+          }
+        ],
+        "explicacion": "El equipo está correctamente implementando los eventos Scrum dentro del contenedor de Sprint."
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "2.4 Artefactos Scrum",
+      "duracion": 20,
+      "puntos": 65,
+      "tipo": "interactivo",
+      "contenido": {
+        "video": {
+          "url": "videos/leccion2-4.mp4",
+          "duracion": "20:30",
+          "subtitulos": "es"
+        },
+        "artefactos": [
+          {
+            "nombre": "Product Backlog",
+            "proposito": "Lista emergente y ordenada de todo lo necesario en el producto",
+            "caracteristicas": [
+              "Vivo y nunca completo",
+              "Ordenado por valor y riesgo",
+              "Responsabilidad del Product Owner",
+              "Visible para todos los stakeholders"
+            ],
+            "atributos_ítems": [
+              {
+                "nombre": "ID del ítem",
+                "descripcion": "Identificador único"
+              },
+              {
+                "nombre": "Descripción",
+                "descripcion": "Qué se necesita hacer"
+              },
+              {
+                "nombre": "Valor",
+                "descripcion": "Valor de negocio para el cliente"
+              },
+              {
+                "nombre": "Orden",
+                "descripcion": "Prioridad relativa"
+              },
+              {
+                "nombre": "Estimación",
+                "descripcion": "Esforzo técnico requerido"
+              }
+            ],
+            "actividades": [
+              "Refinamiento regular",
+              "Priorización basada en valor",
+              "Decomposición de ítems grandes",
+              "Gestión de dependencias"
+            ]
+          },
+          {
+            "nombre": "Sprint Backlog",
+            "proposito": "Conjunto de ítems del Product Backlog seleccionados para el Sprint",
+            "caracteristicas": [
+              "Plan del equipo para el Sprint",
+              "Propiedad de los Developers",
+              "Realista y alcanzable",
+              "Visible y actualizado"
+            ],
+            "componentes": [
+              {
+                "nombre": "Sprint Goal",
+                "descripcion": "Objetivo del Sprint actual"
+              },
+              {
+                "nombre": "Ítems seleccionados",
+                "descripcion": "Trabajo planeado del Sprint"
+              },
+              {
+                "nombre": "Plan de ejecución",
+                "descripcion": "Cómo el equipo entregará el incremento"
+              }
+            ],
+            "propiedad": "Los Developers son dueños del Sprint Backlog"
+          },
+          {
+            "nombre": "Increment",
+            "proposito": "Suma de todos los Product Backlog Items completados en un Sprint",
+            "caracteristicas": [
+              "Potencialmente entregable",
+              "Cumple Definition of Done",
+              "Integrado con incrementos previos",
+              "Inspeccionable en Sprint Review"
+            ],
+            "cualidades": [
+              "Funcional y usable",
+              "Calidad verificada",
+              "Coherente con visión del producto",
+              "Base para siguiente trabajo"
+            ],
+            "importancia": "Hacia el objetivo del Product Goal"
+          }
+        ],
+        "commitments": [
+          {
+            "artefacto": "Product Backlog",
+            "commitment": "Product Goal",
+            "descripcion": "Estado futuro del producto que se está construyendo"
+          },
+          {
+            "artefacto": "Sprint Backlog",
+            "commitment": "Sprint Goal",
+            "descripcion": "El objetivo que se debe lograr durante el Sprint"
+          },
+          {
+            "artefacto": "Increment",
+            "commitment": "Definition of Done",
+            "descripcion": "Acuerdo del equipo sobre cuando el trabajo está completo"
+          }
+        ],
+        "resumen": "Scrum utiliza tres artefactos que representan trabajo o valor: Product Backlog (lista de trabajo del producto), Sprint Backlog (trabajo del Sprint actual) e Increment (trabajo completado)."
+      },
+      "evaluacion": {
+        "tipo": "matching",
+        "instrucciones": "Relaciona cada artefacto con su commit correspondiente",
+        "pares": [
+          {
+            "artefacto": "Product Backlog",
+            "commitment": "Product Goal"
+          },
+          {
+            "artefacto": "Sprint Backlog",
+            "commitment": "Sprint Goal"
+          },
+          {
+            "artefacto": "Increment",
+            "commitment": "Definition of Done"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "2.5 Herramientas y Técnicas Scrum",
+      "duracion": 18,
+      "puntos": 55,
+      "tipo": "video",
+      "contenido": {
+        "video": {
+          "url": "videos/leccion2-5.mp4",
+          "duracion": "18:20",
+          "subtitulos": "es"
+        },
+        "herramientas": [
+          {
+            "categoria": "Gestión del Backlog",
+            "herramientas": [
+              {
+                "nombre": "User Stories",
+                "descripcion": "Formato estándar para describir funcionalidades",
+                "formato": "Como [rol], quiero [funcionalidad] para [beneficio]",
+                "ejemplo": "Como usuario, quiero iniciar sesión con mi email para acceder al sistema"
+              },
+              {
+                "nombre": "Story Mapping",
+                "descripcion": "Visualización del viaje del usuario y priorización",
+                "utilidad": "Planificación de releases y identificación de gaps"
+              },
+              {
+                "nombre": "Backlog Refinement",
+                "descripcion": "Proceso continuo de mejora del backlog",
+                "actividades": ["Descomposición", "Estimación", "Priorización"]
+              }
+            ]
+          },
+          {
+            "categoria": "Estimación",
+            "herramientas": [
+              {
+                "nombre": "Planning Poker",
+                "descripcion": "Técnica de estimación consensuada",
+                "secuencia_fibonacci": [1, 2, 3, 5, 8, 13, 21, ?],
+                "proceso": [
+                  "Presentación del ítem",
+                  "Discusión",
+                  "Estimación individual",
+                  "Revelación simultánea",
+                  "Consenso"
+                ]
+              },
+              {
+                "nombre": "T-Shirt Sizing",
+                "descripcion": "Estimación relativa simple",
+                "tallas": ["XS", "S", "M", "L", "XL", "XXL"],
+                "utilidad": "Estimación rápida inicial"
+              }
+            ]
+          },
+          {
+            "categoria": "Visualización del Progreso",
+            "herramientas": [
+              {
+                "nombre": "Burndown Chart",
+                "descripcion": "Visualización del trabajo restante vs tiempo",
+                "tipos": ["Sprint Burndown", "Release Burndown"],
+                "interpretacion": "Línea ideal vs línea real"
+              },
+              {
+                "nombre": "Cumulative Flow Diagram",
+                "descripcion": "Visualización del flujo de trabajo",
+                "utilidad": "Identificación de cuellos de botella"
+              },
+              {
+                "nombre": "Kanban Board",
+                "descripcion": "Visualización del flujo de trabajo",
+                "columnas_tipicas": ["To Do", "In Progress", "Testing", "Done"]
+              }
+            ]
+          }
+        ],
+        "tecnicas_comunicacion": [
+          {
+            "nombre": "Definition of Done",
+            "descripcion": "Criterios de calidad compartidos",
+            "elementos": [
+              "Código revisado",
+              "Pruebas automatizadas",
+              "Documentación actualizada",
+              "Aceptación del Product Owner"
+            ]
+          },
+          {
+            "nombre": "Definition of Ready",
+            "descripcion": "Criterios para que un ítem esté listo para trabajar",
+            "criterios": [
+              "User story clara",
+              "Dependencias identificadas",
+              "Estimación realizada",
+              "Valor de negocio definido"
+            ]
+          }
+        ],
+        "resumen": "Scrum complementa su framework con diversas herramientas y técnicas como User Stories, Planning Poker, Burndown Charts y Definitions of Done/Done para facilitar la gestión y comunicación efectiva."
+      },
+      "evaluacion": {
+        "tipo": "quiz",
+        "preguntas": [
+          {
+            "pregunta": "¿Qué técnica de estimación utiliza la secuencia de Fibonacci para lograr que las diferencias sean más evidentes?",
+            "opciones": [
+              "T-Shirt Sizing",
+              "Planning Poker",
+              "Story Points",
+              "Story Mapping"
+            ],
+            "respuesta_correcta": 1,
+            "explicacion": "Planning Poker utiliza la secuencia de Fibonacci (1, 2, 3, 5, 8, 13...) donde las diferencias entre números consecutivos aumentan, haciendo más evidente la diferencia de complejidad."
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "titulo": "2.6 Métricas y KPIs en Scrum",
+      "duracion": 15,
+      "puntos": 50,
+      "tipo": "video",
+      "contenido": {
+        "video": {
+          "url": "videos/leccion2-6.mp4",
+          "duracion": "15:35",
+          "subtitulos": "es"
+        },
+        "metricas": [
+          {
+            "categoria": "Métricas de Progreso",
+            "indicadores": [
+              {
+                "nombre": "Velocity",
+                "descripcion": "Cantidad de trabajo completado por Sprint",
+                "calculo": "Story Points completados / Sprint",
+                "utilidad": "Capacidad de planificación",
+                "consideraciones": "No debe usarse para comparar equipos"
+              },
+              {
+                "nombre": "Burndown/Burnup Rate",
+                "descripcion": "Velocidad de consumo/compleción del trabajo",
+                "interpretacion": "Tendencia de finalización",
+                "alertas": "Desviaciones significativas del plan"
+              },
+              {
+                "nombre": "Sprint Completion Rate",
+                "descripcion": "Porcentaje de trabajo comprometido completado",
+                "calculo": "Ítems completados / Ítems comprometidos",
+                "objetivo": "Mantener tasa alta y consistente"
+              }
+            ]
+          },
+          {
+            "categoria": "Métricas de Calidad",
+            "indicadores": [
+              {
+                "nombre": "Defect Density",
+                "descripcion": "Número de defectos por tamaño del producto",
+                "medicion": "Defectos detectados / Story Points",
+                "tendencia_deseada": "Disminución con el tiempo"
+              },
+              {
+                "nombre": "Rework Rate",
+                "descripcion": "Porcentaje de trabajo que necesita rehacerse",
+                "impacto": "Costos adicionales y demoras",
+                "prevencion": "Mejorar Definition of Done"
+              },
+              {
+                "nombre": "Technical Debt",
+                "descripcion": "Costo de corrección futura por decisiones actuales",
+                "gestion": "Priorizar en backlog",
+                "balance": "Entrega vs calidad técnica"
+              }
+            ]
+          },
+          {
+            "categoria": "Métricas de Equipo",
+            "indicadores": [
+              {
+                "nombre": "Team Happiness",
+                "descripcion": "Satisfacción y moral del equipo",
+                "medicion": "Encuestas periódicas (1-5)",
+                "importancia": "Sostenibilidad del rendimiento"
+              },
+              {
+                "nombre": "Team Collaboration Index",
+                "descripcion": "Calidad de colaboración interna",
+                "factores": ["Comunicación", "Confianza", "Soporte"],
+                "evaluacion": "Observación y feedback"
+              },
+              {
+                "nombre": "Learning and Growth",
+                "descripcion": "Desarrollo de competencias del equipo",
+                "indicadores": ["Skills adquiridos", "Innovaciones", "Mejoras"],
+                "fomento": "Retrospectivas y coaching"
+              }
+            ]
+          },
+          {
+            "categoria": "Métricas de Valor",
+            "indicadores": [
+              {
+                "nombre": "Business Value Delivered",
+                "descripcion": "Valor de negocio entregado a stakeholders",
+                "medicion": "Valoración del Product Owner",
+                "frecuencia": "Cada Sprint"
+              },
+              {
+                "nombre": "Customer Satisfaction",
+                "descripcion": "Satisfacción del cliente con el producto",
+                "metodos": ["NPS", "Encuestas", "Feedback directo"],
+                "importancia": "Indicador clave de éxito"
+              },
+              {
+                "nombre": "Time to Market",
+                "descripcion": "Tiempo desde idea hasta entrega",
+                "reduccion": "Enfoque en MVP y entregas frecuentes"
+              }
+            ]
+          }
+        ],
+        "antipatrones_metricas": [
+          "Usar Velocity para comparar equipos",
+          "Medir individualmente en equipos colaborativos",
+          "Foco excesivo en métricas sobre outcomes",
+          "Gaming del sistema por presión de métricas",
+          "Métricas sin contexto o propósito claro"
+        ],
+        "resumen": "Las métricas en Scrum deben enfocarse en valor, calidad y mejora continua, evitando antipatrones como comparar equipos o medir individualmente, manteniendo siempre el propósito de facilitar la toma de decisiones."
+      },
+      "evaluacion": {
+        "tipo": "quiz_final",
+        "preguntas": [
+          {
+            "pregunta": "¿Cuál es la métrica más importante para evaluar el éxito de un equipo Scrum?",
+            "opciones": [
+              "Velocity del equipo",
+              "Business Value Delivered",
+              "Número de story points por Sprint",
+              "Tiempo de respuesta en Daily Scrum"
+            ],
+            "respuesta_correcta": 1,
+            "explicacion": "El Business Value Delivered es la métrica más importante porque mide el valor real entregado al cliente y al negocio, que es el propósito fundamental de Scrum."
+          },
+          {
+            "pregunta": "¿Qué antipatrón métrico debe evitarse completamente en Scrum?",
+            "opciones": [
+              "Medir la velocity del equipo",
+              "Comparar velocity entre equipos",
+              "Trackear el Sprint Burndown",
+              "Medir Business Value Delivered"
+            ],
+            "respuesta_correcta": 1,
+            "explicacion": "Comparar velocity entre equipos es un antipatrón porque cada equipo tiene su propia definición de Story Points y contextos diferentes, haciendo las comparaciones engañosas y contraproducentes."
+          }
+        ]
+      }
+    }
+  ],
+  "recursos_adicionales": {
+    "videos": [
+      {
+        "titulo": "Ken Schwaber: Los Fundamentos de Scrum",
+        "duracion": "45:20",
+        "url": "recursos/videos/ken-schwaber-fundamentos.mp4",
+        "tipo": "experto"
+      },
+      {
+        "titulo": "Jeff Sutherland: El Origen de Scrum",
+        "duracion": "35:15",
+        "url": "recursos/videos/jeff-sutherland-origen.mp4",
+        "tipo": "historia"
+      }
+    ],
+    "lecturas": [
+      {
+        "titulo": "Scrum: The Art of Doing Twice the Work in Half the Time - Jeff Sutherland",
+        "tipo": "pdf",
+        "url": "recursos/pdf/scrum-book-sutherland.pdf",
+        "paginas": 280
+      },
+      {
+        "titulo": "Guía Práctica de Implementación Scrum",
+        "tipo": "pdf",
+        "url": "recursos/pdf/guia-implementacion-scrum.pdf",
+        "paginas": 45
+      }
+    ],
+    "podcasts": [
+      {
+        "titulo": "Scrum Masters Anonymous #1: Primeros Pasos como Scrum Master",
+        "duracion": "42:30",
+        "url": "recursos/podcasts/scrum-masters-001.mp3",
+        "invitados": ["Scrum Master Senior", "Product Owner"]
+      }
+    ],
+    "herramientas": [
+      {
+        "nombre": "Jira Software",
+        "descripcion": "Plataforma completa para gestión de proyectos Scrum",
+        "tipo": "scrum",
+        "url": "https://www.atlassian.com/software/jira/agile"
+      },
+      {
+        "nombre": "Azure DevOps",
+        "descripcion": "Suite de desarrollo con capacidades Scrum",
+        "tipo": "scrum",
+        "url": "https://azure.microsoft.com/es-es/services/devops/"
+      },
+      {
+        "nombre": "Miro",
+        "descripcion": "Whiteboard colaborativo para ceremonias Scrum",
+        "tipo": "colaboración",
+        "url": "https://miro.com"
+      }
+    ],
+    "ejercicios": [
+      {
+        "titulo": "Simulación Completa de Sprint",
+        "tipo": "práctico",
+        "duracion": "2 horas",
+        "instrucciones": "Participa en un Sprint completo desde planning hasta retrospective con un proyecto simulado"
+      },
+      {
+        "titulo": "Análisis de Métricas Scrum",
+        "tipo": "análisis",
+        "duracion": "45 minutos",
+        "instrucciones": "Analiza datos de un equipo Scrum ficticio y identifica áreas de mejora basadas en las métricas presentadas"
+      }
+    ]
+  },
+  "evaluacion_semanal": {
+    "tipo": "comprehensive",
+    "duracion": "45 minutos",
+    "preguntas_totales": 20,
+    "puntuacion_maxima": 200,
+    "umbral_aprobacion": 70,
+    "secciones": [
+      {
+        "nombre": "Conceptos Scrum Básicos",
+        "preguntas": 5,
+        "puntos": 50
+      },
+      {
+        "nombre": "Roles y Responsabilidades",
+        "preguntas": 5,
+        "puntos": 50
+      },
+      {
+        "nombre": "Eventos y Ceremonias",
+        "preguntas": 5,
+        "puntos": 50
+      },
+      {
+        "nombre": "Artefactos y Herramientas",
+        "preguntas": 5,
+        "puntos": 50
+      }
+    ]
+  },
+  "proyecto_practico": {
+    "titulo": "Implementación de Scrum en Proyecto Real",
+    "descripcion": "Diseña una implementación completa de Scrum para un proyecto de desarrollo de software de tu elección",
+    "entregables": [
+      "Definición de roles y responsabilidades",
+      "Configuración de artefactos Scrum (backlogs, DoD)",
+      "Planificación de ceremonias y calendario",
+      "Definición de métricas y KPIs",
+      "Plan de implementación gradual",
+      "Identificación de riesgos y mitigación"
+    ],
+    "duracion_estimada": "3-4 horas",
+    "trabajo": "individual",
+    "puntos": 120,
+    "criterios_evaluacion": [
+      "Alineación con principios Scrum (20%)",
+      "Viabilidad de la implementación (25%)",
+      "Completitud de artefactos definidos (20%)",
+      "Calidad del plan de implementación (20%)",
+      "Análisis de riesgos realista (15%)"
+    ]
+  }
+}
