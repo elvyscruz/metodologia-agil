@@ -42,27 +42,27 @@ function initializeLessonCompletionButtons() {
                 // Buscar el botón de siguiente lección
                 const nextBtn = completionButtons.querySelector('button[onclick="nextLesson()"]');
                 if (nextBtn) {
-                    // Si la lección anterior está completada, habilitar el botón de siguiente lección
-                    const shouldEnable = canAccessLesson(i + 1);
+                    // Si la lección está completada, habilitar el botón de siguiente lección
+                    const shouldEnable = appState.completedLessons.includes(i);
                     nextBtn.disabled = !shouldEnable;
 
                     if (shouldEnable) {
-                        console.log(`✅ Botón de lección ${i} habilitado (lección ${i+1} accesible)`);
+                        console.log(`✅ Botón de lección ${i} habilitado (lección completada)`);
                     } else {
-                        console.log(`🔒 Botón de lección ${i} deshabilitado (lección ${i+1} no accesible)`);
+                        console.log(`🔒 Botón de lección ${i} deshabilitado (lección no completada)`);
                     }
                 } else {
                     // Intento alternativo: buscar por texto
                     const allButtons = completionButtons.querySelectorAll('button');
                     for (let btn of allButtons) {
                         if (btn.textContent.includes('Siguiente Lección')) {
-                            const shouldEnable = canAccessLesson(i + 1);
+                            const shouldEnable = appState.completedLessons.includes(i);
                             btn.disabled = !shouldEnable;
 
                             if (shouldEnable) {
-                                console.log(`✅ Botón de lección ${i} habilitado por texto (lección ${i+1} accesible)`);
+                                console.log(`✅ Botón de lección ${i} habilitado por texto (lección completada)`);
                             } else {
-                                console.log(`🔒 Botón de lección ${i} deshabilitado por texto (lección ${i+1} no accesible)`);
+                                console.log(`🔒 Botón de lección ${i} deshabilitado por texto (lección no completada)`);
                             }
                             break;
                         }
@@ -87,7 +87,7 @@ function updateCurrentLessonButton() {
             // Buscar el botón de siguiente lección
             const nextBtn = completionButtons.querySelector('button[onclick="nextLesson()"]');
             if (nextBtn) {
-                const shouldEnable = canAccessLesson(currentLesson + 1);
+                const shouldEnable = appState.completedLessons.includes(currentLesson);
                 nextBtn.disabled = !shouldEnable;
                 console.log(`🎯 Botón de lección actual ${currentLesson} actualizado: ${shouldEnable ? 'habilitado' : 'deshabilitado'}`);
             }
@@ -769,11 +769,40 @@ function markLessonAsCompleted(lessonId) {
 
         showNotification(`✅ ¡Lección ${lessonId} completada! +${lessonPoints} puntos`, 'success');
 
+        // Habilitar botón de siguiente lección inmediatamente
+        enableNextLessonButton(lessonId);
+
         // Desbloquear siguiente lección
         if (lessonId < 6) {
             unlockNextLesson();
         } else {
             showNotification('🎉 ¡Felicidades! Has completado todas las lecciones de la Semana 1', 'success');
+        }
+    }
+}
+
+// Función específica para habilitar el botón de siguiente lección
+function enableNextLessonButton(lessonId) {
+    const currentLessonElement = document.getElementById(`lesson-${lessonId}`);
+    if (currentLessonElement) {
+        const completionButtons = currentLessonElement.querySelector('.completion-buttons');
+        if (completionButtons) {
+            // Buscar el botón de siguiente lección
+            const nextBtn = completionButtons.querySelector('button[onclick="nextLesson()"]');
+            if (nextBtn) {
+                nextBtn.disabled = false;
+                console.log(`✅ Botón de siguiente lección habilitado para lección ${lessonId}`);
+            } else {
+                // Intento alternativo: buscar por texto
+                const allButtons = completionButtons.querySelectorAll('button');
+                for (let btn of allButtons) {
+                    if (btn.textContent.includes('Siguiente Lección')) {
+                        btn.disabled = false;
+                        console.log(`✅ Botón de siguiente lección habilitado por texto para lección ${lessonId}`);
+                        break;
+                    }
+                }
+            }
         }
     }
 }
@@ -801,41 +830,12 @@ function markCurrentLessonComplete() {
         markLessonAsCompleted(currentLesson);
         console.log(`📊 Lecciones completadas después: ${appState.completedLessons}`);
 
-        // Habilitar botón de siguiente lección en la lección actual
-        const currentLessonElement = document.getElementById(`lesson-${currentLesson}`);
-        if (currentLessonElement) {
-            // Buscar todos los botones dentro de los completion-buttons
-            const completionButtons = currentLessonElement.querySelector('.completion-buttons');
-            if (completionButtons) {
-                // Buscar el botón de siguiente lección (el segundo botón o el que contiene "Siguiente Lección")
-                const nextBtn = completionButtons.querySelector('button[onclick="nextLesson()"]');
-                if (nextBtn) {
-                    nextBtn.disabled = false;
-                    console.log(`✅ Botón de siguiente lección habilitado con primer selector`);
-                } else {
-                    // Intento alternativo: buscar por texto
-                    const allButtons = completionButtons.querySelectorAll('button');
-                    for (let btn of allButtons) {
-                        if (btn.textContent.includes('Siguiente Lección')) {
-                            btn.disabled = false;
-                            console.log(`✅ Botón de siguiente lección habilitado por texto`);
-                            break;
-                        }
-                    }
-                }
-            } else {
-                console.log(`❌ No se encontró el contenedor .completion-buttons`);
-            }
-        } else {
-            console.log(`❌ No se encontró el elemento de la lección ${currentLesson}`);
-        }
-
         showNotification(`✅ Lección ${currentLesson} marcada como completada`, 'success');
         updateLessonNavigation();
 
         // Actualizar botones inmediatamente después de marcar como completada
         setTimeout(() => {
-            updateCurrentLessonButton();
+            initializeLessonCompletionButtons();
         }, 100);
     } else {
         console.log(`ℹ️ La lección ${currentLesson} ya estaba completada`);
@@ -1125,6 +1125,7 @@ document.head.appendChild(additionalStyles);
 window.nextLesson = nextLesson;
 window.saveNotes = saveNotes;
 window.showModal = showModal;
+window.markCurrentLessonComplete = markCurrentLessonComplete;
 window.sendTutorMessage = function() {
     const input = document.getElementById('tutorQuestion');
     if (input && input.value.trim()) {
