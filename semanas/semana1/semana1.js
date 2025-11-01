@@ -42,28 +42,17 @@ function initializeLessonCompletionButtons() {
                 // Buscar el botón de siguiente lección
                 const nextBtn = completionButtons.querySelector('button[onclick="nextLesson()"]');
                 if (nextBtn) {
-                    // Si la lección está completada, habilitar el botón de siguiente lección
-                    const shouldEnable = appState.completedLessons.includes(i);
-                    nextBtn.disabled = !shouldEnable;
-
-                    if (shouldEnable) {
-                        console.log(`✅ Botón de lección ${i} habilitado (lección completada)`);
-                    } else {
-                        console.log(`🔒 Botón de lección ${i} deshabilitado (lección no completada)`);
-                    }
+                    // Siempre habilitar el botón de siguiente lección
+                    nextBtn.disabled = false;
+                    console.log(`✅ Botón de lección ${i} siempre habilitado`);
                 } else {
                     // Intento alternativo: buscar por texto
                     const allButtons = completionButtons.querySelectorAll('button');
                     for (let btn of allButtons) {
                         if (btn.textContent.includes('Siguiente Lección')) {
-                            const shouldEnable = appState.completedLessons.includes(i);
-                            btn.disabled = !shouldEnable;
-
-                            if (shouldEnable) {
-                                console.log(`✅ Botón de lección ${i} habilitado por texto (lección completada)`);
-                            } else {
-                                console.log(`🔒 Botón de lección ${i} deshabilitado por texto (lección no completada)`);
-                            }
+                            // Siempre habilitar el botón de siguiente lección
+                            btn.disabled = false;
+                            console.log(`✅ Botón de lección ${i} siempre habilitado por texto`);
                             break;
                         }
                     }
@@ -87,9 +76,9 @@ function updateCurrentLessonButton() {
             // Buscar el botón de siguiente lección
             const nextBtn = completionButtons.querySelector('button[onclick="nextLesson()"]');
             if (nextBtn) {
-                const shouldEnable = appState.completedLessons.includes(currentLesson);
-                nextBtn.disabled = !shouldEnable;
-                console.log(`🎯 Botón de lección actual ${currentLesson} actualizado: ${shouldEnable ? 'habilitado' : 'deshabilitado'}`);
+                // Siempre habilitar el botón de siguiente lección
+                nextBtn.disabled = false;
+                console.log(`🎯 Botón de lección actual ${currentLesson} siempre habilitado`);
             }
         }
     }
@@ -781,7 +770,7 @@ function markLessonAsCompleted(lessonId) {
     }
 }
 
-// Función específica para habilitar el botón de siguiente lección
+// Función específica para habilitar el botón de siguiente lección (siempre habilitado)
 function enableNextLessonButton(lessonId) {
     const currentLessonElement = document.getElementById(`lesson-${lessonId}`);
     if (currentLessonElement) {
@@ -791,14 +780,14 @@ function enableNextLessonButton(lessonId) {
             const nextBtn = completionButtons.querySelector('button[onclick="nextLesson()"]');
             if (nextBtn) {
                 nextBtn.disabled = false;
-                console.log(`✅ Botón de siguiente lección habilitado para lección ${lessonId}`);
+                console.log(`✅ Botón de siguiente lección siempre habilitado para lección ${lessonId}`);
             } else {
                 // Intento alternativo: buscar por texto
                 const allButtons = completionButtons.querySelectorAll('button');
                 for (let btn of allButtons) {
                     if (btn.textContent.includes('Siguiente Lección')) {
                         btn.disabled = false;
-                        console.log(`✅ Botón de siguiente lección habilitado por texto para lección ${lessonId}`);
+                        console.log(`✅ Botón de siguiente lección siempre habilitado por texto para lección ${lessonId}`);
                         break;
                     }
                 }
